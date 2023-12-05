@@ -17,7 +17,7 @@ export const posts = [
     category: ['all', 'nizh'],
     photos: [
       {
-        photo: 'src/assets/nizh/makaryi/fone.jpg',
+        photo: '/nizh/makaryi/fone.jpg',
         text: 'photo-1',
       },
     ],
@@ -28,7 +28,7 @@ export const posts = [
     category: ['all'],
     photos: [
       {
-        photo: 'src/assets/other/murom/fone.jpg',
+        photo: '/other/murom/fone.jpg',
         text: 'photo-1',
       },
     ],
@@ -39,7 +39,7 @@ export const posts = [
     category: ['all'],
     photos: [
       {
-        photo: 'src/assets/other/vladimir/fone.jpg',
+        photo: '/other/vladimir/fone.jpg',
         text: 'photo-1',
       },
     ],
@@ -50,31 +50,31 @@ export const posts = [
     category: ['all', 'big'],
     photos: [
       {
-        photo: 'src/assets/camp/ergaki/fone.jpg',
+        photo: '/camp/ergaki/fone.jpg',
         text: 'photo-1',
       },
       {
-        photo: 'src/assets/camp/ergaki/puteshest_50b.jpg',
+        photo: '/camp/ergaki/puteshest_50b.jpg',
         text: 'photo-2',
       },
       {
-        photo: 'src/assets/camp/ergaki/puteshest_52b.jpg',
+        photo: '/camp/ergaki/puteshest_52b.jpg',
         text: 'photo-3',
       },
       {
-        photo: 'src/assets/camp/ergaki/puteshest_53b.jpg',
+        photo: '/camp/ergaki/puteshest_53b.jpg',
         text: 'photo-4',
       },
       {
-        photo: 'src/assets/camp/ergaki/puteshest_54b.jpg',
+        photo: '/camp/ergaki/puteshest_54b.jpg',
         text: 'photo-5',
       },
       {
-        photo: 'src/assets/camp/ergaki/puteshest_55b.jpg',
+        photo: '/camp/ergaki/puteshest_55b.jpg',
         text: 'photo-6',
       },
       {
-        photo: 'src/assets/camp/ergaki/puteshest_56b.jpg',
+        photo: '/camp/ergaki/puteshest_56b.jpg',
         text: 'photo-7',
       },
     ],
