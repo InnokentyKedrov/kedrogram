@@ -1,0 +1,32 @@
+import { Dispatch, SetStateAction } from 'react';
+import { PostsType, posts } from '../../consts/posts';
+import styles from './Sidebar.module.css';
+
+type PropsType = {
+  setCurrentPosts: Dispatch<SetStateAction<PostsType[]>>;
+};
+
+const Sidebar = ({ setCurrentPosts }: PropsType) => {
+  const categoryClick = (data: string) => {
+    const temp = posts.filter((el) => el.category.includes(data));
+    setCurrentPosts(temp);
+  };
+
+  return (
+    <aside className={styles.sidebar}>
+      <ul className={styles.list}>
+        <li className={`${styles.item} ${styles.item_home}`} onClick={() => categoryClick('all')}>
+          Все посты
+        </li>
+        <li className={`${styles.item} ${styles.item_camp}`} onClick={() => categoryClick('big')}>
+          Большие походы
+        </li>
+        <li className={`${styles.item} ${styles.item_deer}`} onClick={() => categoryClick('nizh')}>
+          Нижегородская область
+        </li>
+      </ul>
+    </aside>
+  );
+};
+
+export default Sidebar;

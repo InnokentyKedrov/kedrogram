@@ -1,0 +1,73 @@
+.header__title_image {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+
+  width: 100px;
+  height: 100px;
+
+  text-rendering: geometricprecision;
+
+  filter: drop-shadow(5px 5px 3px rgb(0 0 0 / 10%));
+
+  fill-rule: evenodd;
+  image-rendering: optimizequality;
+  shape-rendering: geometricprecision;
+  clip-rule: evenodd;
+}
+
+.header__title_imagefil1 {
+  fill: none;
+}
+
+.header__title_imagefil8 {
+  fill: #fefefe;
+}
+
+.header__title_imagefil5 {
+  fill: #fff7b2;
+}
+
+.header__title_imagefil9 {
+  fill: #fefefe;
+}
+
+.header__title_imagefil4 {
+  fill: #4fae85;
+}
+
+.header__title_imagefil3 {
+  fill: #5996d1;
+}
+
+.header__title_imagefil7 {
+  fill: #5e686f;
+}
+
+.header__title_imagefil2 {
+  fill: #86bce7;
+}
+
+.header__title_imagefil0 {
+  fill: #a3cff0;
+}
+
+.header__title_imagefil6 {
+  fill: #e8a389;
+}
+
+@media (width <= 600px) {
+  .header__title_image {
+    top: -5vh;
+    width: 10vw;
+    height: 16vh;
+  }
+}
+
+@media (width <= 450px) {
+  .header__title_image {
+    top: -7vh;
+    width: 15vw;
+    height: 20vh;
+  }
+}
