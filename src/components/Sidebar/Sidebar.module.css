@@ -60,3 +60,13 @@
 [data-theme='dark'] .item_deer {
   background-image: url('../../assets/icons/deer_light.svg');
 }
+
+@media (width < 1160px) {
+  .item {
+    padding: 0;
+  }
+
+  .item span {
+    display: none;
+  }
+}

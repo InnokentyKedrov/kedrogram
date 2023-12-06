@@ -43,7 +43,7 @@
   background-image: url('../../assets/icons/paw_mini.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100px 100px;
+  background-size: 80%;
 }
 
 .themes {
@@ -70,4 +70,15 @@
 
 .themes:active {
   transform: scale(1);
+}
+
+@media (width < 1024px) {
+  .navigation {
+    height: 100px;
+  }
+
+  .navigation__item {
+    width: 100px;
+    height: 100px;
+  }
 }

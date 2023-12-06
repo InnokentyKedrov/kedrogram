@@ -1,19 +1,38 @@
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import styles from './Post.module.css';
-import { PostsType } from '../../../consts/posts';
 import gallery from '../../../assets/icons/gallery.svg';
 
-const Post = ({ title, data, photos }: Omit<PostsType, 'category'>) => {
+type PropsType = {
+  text: string;
+  title: string;
+  data: string;
+  photos: string[];
+  setSlider: Dispatch<SetStateAction<boolean>>;
+  setCurrentPhotos: Dispatch<string[]>;
+  setCurrentText: Dispatch<string>;
+};
+
+const Post = ({
+  text,
+  title,
+  data,
+  photos,
+  setSlider,
+  setCurrentPhotos,
+  setCurrentText,
+}: PropsType) => {
   const [hover, setHover] = useState<boolean>(false);
 
-  const postClick: React.MouseEventHandler<HTMLLIElement> = (event) => {
-    console.log('event: ', event);
+  const postClick: React.MouseEventHandler<HTMLLIElement> = () => {
+    setSlider(true);
+    setCurrentPhotos(photos);
+    setCurrentText(text);
   };
 
   return (
     <li
       className={styles.item}
-      style={{ backgroundImage: `url(${photos[0].photo})` }}
+      style={{ backgroundImage: `url(${photos[0]})` }}
       onClick={postClick}
       onMouseEnter={() => {
         setHover(true);

@@ -36,22 +36,4 @@ const Theme = (props: { children: React.ReactNode }) => {
   );
 };
 
-// Theme.SimpleToggler = function SimpleToggler() {
-//   const { theme, setTheme } = useTheme();
-
-//   const handleSwitchTheme = () => {
-//     if (theme === 'dark') {
-//       setTheme('light');
-//     } else {
-//       setTheme('dark');
-//     }
-//   };
-
-//   return (
-//     <div className={Styles.simpleToggler} onClick={handleSwitchTheme}>
-//       <div className={Styles.ball} data-theme={theme} />
-//     </div>
-//   );
-// };
-
 export default Theme;

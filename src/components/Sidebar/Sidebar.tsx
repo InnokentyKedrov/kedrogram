@@ -16,13 +16,13 @@ const Sidebar = ({ setCurrentPosts }: PropsType) => {
     <aside className={styles.sidebar}>
       <ul className={styles.list}>
         <li className={`${styles.item} ${styles.item_home}`} onClick={() => categoryClick('all')}>
-          Все посты
+          <span>Все посты</span>
         </li>
         <li className={`${styles.item} ${styles.item_camp}`} onClick={() => categoryClick('big')}>
-          Большие походы
+          <span>Большие походы</span>
         </li>
         <li className={`${styles.item} ${styles.item_deer}`} onClick={() => categoryClick('nizh')}>
-          Нижегородская область
+          <span>Нижегородская область</span>
         </li>
       </ul>
     </aside>

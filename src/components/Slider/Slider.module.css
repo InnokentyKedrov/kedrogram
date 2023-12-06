@@ -1,0 +1,137 @@
+.slider__wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(var(--background-color));
+}
+
+.button {
+  cursor: pointer;
+
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.button__close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+}
+
+.button__close:hover {
+  transform: scale(1.2);
+}
+
+.button::before,
+.button::after {
+  content: '';
+
+  position: absolute;
+  left: 16px;
+
+  width: 2px;
+  height: 33px;
+
+  background-color: rgb(var(--color));
+}
+
+.button::before {
+  transform: rotate(45deg);
+}
+
+.button::after {
+  transform: rotate(-45deg);
+}
+
+.button__left,
+.button__right {
+  position: absolute;
+  top: calc(50% - 20px);
+  background-color: rgba(var(--color) / 50%);
+  border-radius: 50%;
+}
+
+.button__left {
+  left: calc(5vw - 40px);
+}
+
+.button__right {
+  left: 45vw;
+}
+
+.button__left::before,
+.button__right::before {
+  top: 5px;
+  transform: rotate(55deg);
+  height: 20px;
+  background-color: #fff;
+}
+
+.button__right::before {
+  top: 16px;
+  left: 21px;
+}
+
+.button__left::after,
+.button__right::after {
+  top: 16px;
+  transform: rotate(-55deg);
+  height: 20px;
+  background-color: #fff;
+}
+
+.button__right::after {
+  top: 5px;
+  left: 21px;
+}
+
+.button__left:hover,
+.button__right:hover {
+  background-color: rgba(var(--color) / 80%);
+}
+
+.disabled:hover {
+  cursor: unset;
+  background-color: rgba(var(--color) / 50%);
+}
+
+.slider {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+
+  background-color: rgb(var(--background-color));
+}
+
+.slider__list {
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+
+  width: 50vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.image__text_wrapper {
+  width: 30vw;
+  padding: 32px;
+}
