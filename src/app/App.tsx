@@ -15,9 +15,8 @@ const App = () => {
   const [currentPosts, setCurrentPosts] = useState<PostsType[]>(posts);
 
   useEffect(() => {
-    if (width === 100) document.body.style.overflow = 'hidden';
-    else document.body.style.overflow = slider ? 'hidden' : 'unset';
-  }, [slider, width]);
+    document.body.style.overflow = slider ? 'hidden' : 'unset';
+  }, [slider]);
 
   useEffect(() => {
     window.addEventListener('resize', () => {

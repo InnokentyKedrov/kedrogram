@@ -62,4 +62,8 @@ body {
   :root {
     --main-width: 100vw;
   }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 }

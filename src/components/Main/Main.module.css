@@ -5,6 +5,12 @@
   padding: 0 20px;
 }
 
+.list__wrapper {
+  width: 100%;
+  padding-top: 32px;
+  border-top: 1px solid rgb(var(--border-color));
+}
+
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -12,11 +18,8 @@
 
   margin: 0;
   padding: 0;
-  padding-top: 32px;
 
   list-style-type: none;
-
-  border-top: 1px solid rgb(var(--border-color));
 }
 
 @media (width < 768px) {
@@ -24,5 +27,17 @@
     height: calc(100vh - 70px - 7vh);
     margin: 0;
     padding: 0;
+    border-top: 1px solid rgb(var(--border-color));
+  }
+
+  .list__wrapper {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 10px 0;
+  }
+
+  .list {
+    padding: 0;
+    border: none;
   }
 }

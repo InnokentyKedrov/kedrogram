@@ -13,22 +13,24 @@ type PropsType = {
 const Main = ({ currentPosts, setSlider, setCurrentPhotos, setCurrentText }: PropsType) => {
   return (
     <main className={styles.main}>
-      <ul className={styles.list}>
-        {currentPosts.map((el) => {
-          return (
-            <Post
-              key={el.title}
-              text={el.text}
-              title={el.title}
-              data={el.data}
-              photos={el.photos}
-              setSlider={setSlider}
-              setCurrentPhotos={setCurrentPhotos}
-              setCurrentText={setCurrentText}
-            />
-          );
-        })}
-      </ul>
+      <div className={styles.list__wrapper}>
+        <ul className={styles.list}>
+          {currentPosts.map((el) => {
+            return (
+              <Post
+                key={el.title}
+                text={el.text}
+                title={el.title}
+                data={el.data}
+                photos={el.photos}
+                setSlider={setSlider}
+                setCurrentPhotos={setCurrentPhotos}
+                setCurrentText={setCurrentText}
+              />
+            );
+          })}
+        </ul>
+      </div>
     </main>
   );
 };
