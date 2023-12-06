@@ -62,11 +62,39 @@
 }
 
 @media (width < 1160px) {
+  .sidebar {
+    padding: 4vh 0;
+  }
+
   .item {
+    width: 3vh;
+    height: 3vh;
+    margin: 0 auto;
     padding: 0;
   }
 
   .item span {
     display: none;
+  }
+}
+
+@media (width < 768px) {
+  .sidebar {
+    padding: 2vh 0;
+    border-top: 1px solid rgb(var(--border-color));
+    border-right: none;
+  }
+
+  .list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .item {
+    margin: 0;
+  }
+
+  .item:hover {
+    transform: translateY(10px);
   }
 }

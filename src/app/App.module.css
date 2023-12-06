@@ -25,3 +25,11 @@
       'sidebar main' 1fr / calc(4vw + 3vh) 1fr;
   }
 }
+
+@media (width < 768px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

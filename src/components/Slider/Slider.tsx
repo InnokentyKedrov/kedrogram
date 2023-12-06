@@ -6,31 +6,32 @@ type PropsType = {
   photos: string[];
   setSlider: Dispatch<SetStateAction<boolean>>;
   text: string;
+  width: number;
 };
 
-const Slider = ({ photos, setSlider, text }: PropsType) => {
+const Slider = ({ photos, setSlider, text, width }: PropsType) => {
   const [position, setPosition] = useState<number>(0);
   const [leftDisabled, setLeftDisabled] = useState<boolean>(false);
   const [rightDisabled, setRightDisabled] = useState<boolean>(false);
 
   const left = () => {
     if (!leftDisabled) {
-      if (position !== 0) setPosition(position + 50);
+      if (position !== 0) setPosition(position + width);
       if (rightDisabled) setRightDisabled(false);
     }
   };
 
   const right = () => {
     if (!rightDisabled) {
-      if (position !== (1 - photos.length) * 50) setPosition(position - 50);
+      if (position !== (1 - photos.length) * width) setPosition(position - width);
       if (leftDisabled) setLeftDisabled(false);
     }
   };
 
   useEffect(() => {
     if (position === 0) setLeftDisabled(true);
-    if (position === (1 - photos.length) * 50) setRightDisabled(true);
-  }, [position, photos.length]);
+    if (position === (1 - photos.length) * width) setRightDisabled(true);
+  }, [position, photos.length, width]);
 
   return (
     <div className={styles.slider__wrapper}>

@@ -25,3 +25,17 @@
   width: 30px;
   height: 30px;
 }
+
+@media (width < 768px) {
+  .item {
+    height: calc((var(--main-width) - 2 * 4px) / 3);
+    font-size: 14px;
+  }
+
+  .gallery {
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+}

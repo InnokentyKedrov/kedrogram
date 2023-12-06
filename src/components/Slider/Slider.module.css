@@ -24,6 +24,7 @@
 
 .button__close {
   position: absolute;
+  z-index: 1;
   top: 1vw;
   right: 1vw;
 }
@@ -134,4 +135,49 @@
 .image__text_wrapper {
   width: 30vw;
   padding: 32px;
+}
+
+.image__text_wrapper p {
+  margin: 0;
+}
+
+@media (width < 1024px) {
+  .slider {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .slider__list,
+  .image__text_wrapper {
+    width: 100%;
+  }
+
+  .button__left {
+    left: 4vw;
+  }
+
+  .button__right {
+    left: 62vw;
+  }
+}
+
+@media (width < 768px) {
+  .slider {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .button__left {
+    left: 4vw;
+  }
+
+  .button__right {
+    left: 85vw;
+  }
+
+  .image__text_wrapper {
+    height: 120px;
+    padding: 10px;
+    font-size: 14px;
+  }
 }

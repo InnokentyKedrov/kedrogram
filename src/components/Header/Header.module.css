@@ -5,7 +5,7 @@
   justify-content: space-between;
 
   width: var(--main-width);
-  height: 214px;
+  height: 100%;
   margin: 0 auto;
   padding: 32px 20px;
 }
@@ -26,9 +26,16 @@
   height: 150px;
 
   background-color: rgb(var(--icons-color));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
   border-radius: 50%;
 
   transition: transform 0.4s ease-in-out;
+}
+
+.navigation__item_flag {
+  background-image: url('../../assets/icons/flag.png');
 }
 
 .navigation__item_flag:hover {
@@ -40,10 +47,7 @@
 }
 
 .navigation__item_paw {
-  background-image: url('../../assets/icons/paw_mini.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
+  background-image: url('../../assets/icons/paw.png');
 }
 
 .themes {
@@ -80,5 +84,21 @@
   .navigation__item {
     width: 100px;
     height: 100px;
+  }
+}
+
+@media (width < 768px) {
+  .header {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .navigation {
+    height: 50px;
+  }
+
+  .navigation__item {
+    width: 50px;
+    height: 50px;
   }
 }

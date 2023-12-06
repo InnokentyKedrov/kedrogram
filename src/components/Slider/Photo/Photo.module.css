@@ -17,3 +17,15 @@
   background-position: center;
   background-size: contain;
 }
+
+@media (width < 1024px) {
+  .slider__image {
+    width: 70vw;
+  }
+}
+
+@media (width < 768px) {
+  .slider__image {
+    width: 100vh;
+  }
+}

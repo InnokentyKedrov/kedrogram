@@ -18,3 +18,11 @@
 
   border-top: 1px solid rgb(var(--border-color));
 }
+
+@media (width < 768px) {
+  .main {
+    height: calc(100vh - 70px - 7vh);
+    margin: 0;
+    padding: 0;
+  }
+}

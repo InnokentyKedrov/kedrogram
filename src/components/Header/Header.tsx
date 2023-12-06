@@ -1,5 +1,4 @@
 import styles from './Header.module.css';
-import Flag from '../Flag/Flag';
 import { useTheme } from '../../hooks/hooks';
 
 const Header = () => {
@@ -19,9 +18,7 @@ const Header = () => {
         <a
           className={`${styles.navigation__item} ${styles.navigation__item_flag}`}
           href="https://kedr-club.vercel.app"
-        >
-          <Flag />
-        </a>
+        ></a>
         <div className={`${styles.navigation__item} ${styles.navigation__item_paw}`}></div>
       </nav>
       <div className={styles.themes} onClick={themeToggle} />
