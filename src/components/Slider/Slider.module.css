@@ -169,9 +169,9 @@
     height: 100%;
   }
 
-  .slider__list {
+  /* .slider__list {
     height: 84vh;
-  }
+  } */
 
   .button__left {
     left: 5vw;
