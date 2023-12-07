@@ -34,8 +34,8 @@
   transform: scale(1.2);
 }
 
-.button::before,
-.button::after {
+.button__close::before,
+.button__close::after {
   content: '';
 
   position: absolute;
@@ -47,11 +47,11 @@
   background-color: rgb(var(--color));
 }
 
-.button::before {
+.button__close::before {
   transform: rotate(45deg);
 }
 
-.button::after {
+.button__close::after {
   transform: rotate(-45deg);
 }
 
@@ -59,7 +59,7 @@
 .button__right {
   position: absolute;
   top: calc(50% - 20px);
-  background-color: rgba(var(--color) / 50%);
+  background-image: url('../../assets/icons/arrow_dark.png');
   border-radius: 50%;
 }
 
@@ -69,42 +69,18 @@
 
 .button__right {
   left: 45vw;
+  transform: rotate(180deg);
 }
 
-.button__left::before,
-.button__right::before {
-  top: 5px;
-  transform: rotate(55deg);
-  height: 20px;
-  background-color: #fff;
-}
-
-.button__right::before {
-  top: 16px;
-  left: 21px;
-}
-
-.button__left::after,
-.button__right::after {
-  top: 16px;
-  transform: rotate(-55deg);
-  height: 20px;
-  background-color: #fff;
-}
-
-.button__right::after {
-  top: 5px;
-  left: 21px;
+[data-theme='dark'] .button__left,
+[data-theme='dark'] .button__right {
+  background-image: url('../../assets/icons/arrow_light.png');
 }
 
 .button__left:hover,
 .button__right:hover {
-  background-color: rgba(var(--color) / 80%);
-}
-
-.disabled:hover {
-  cursor: unset;
-  background-color: rgba(var(--color) / 50%);
+  opacity: 0.8;
+  filter: drop-shadow(0 0 10px rgb(0 0 0 / 50%));
 }
 
 .slider {
@@ -169,10 +145,6 @@
     height: 100%;
   }
 
-  /* .slider__list {
-    height: 84vh;
-  } */
-
   .button__left {
     left: 5vw;
     width: 30px;
@@ -183,30 +155,6 @@
     left: 87vw;
     width: 30px;
     height: 30px;
-  }
-
-  .button__left::before {
-    top: 4px;
-    left: 12px;
-    height: 15px;
-  }
-
-  .button__left::after {
-    top: 12px;
-    left: 12px;
-    height: 15px;
-  }
-
-  .button__right::before {
-    top: 12px;
-    left: 15px;
-    height: 15px;
-  }
-
-  .button__right::after {
-    top: 4px;
-    left: 15px;
-    height: 15px;
   }
 
   .image__text_wrapper {

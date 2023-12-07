@@ -27,8 +27,6 @@
 @media (width < 768px) {
   .slider__image {
     width: 100vh;
-
-    /* height: 84vh; */
   }
 
   .slider__item {
