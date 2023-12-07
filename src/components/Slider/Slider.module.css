@@ -17,6 +17,7 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: drop-shadow(0 0 10px rgb(0 0 0 / 10%));
   border: none;
 
   transition: all 0.4s ease-in-out;
@@ -163,20 +164,53 @@
 
 @media (width < 768px) {
   .slider {
+    overflow-y: scroll;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+  }
+
+  .slider__list {
+    height: 84vh;
   }
 
   .button__left {
-    left: 4vw;
+    left: 5vw;
+    width: 30px;
+    height: 30px;
   }
 
   .button__right {
-    left: 85vw;
+    left: 87vw;
+    width: 30px;
+    height: 30px;
+  }
+
+  .button__left::before {
+    top: 4px;
+    left: 12px;
+    height: 15px;
+  }
+
+  .button__left::after {
+    top: 12px;
+    left: 12px;
+    height: 15px;
+  }
+
+  .button__right::before {
+    top: 12px;
+    left: 15px;
+    height: 15px;
+  }
+
+  .button__right::after {
+    top: 4px;
+    left: 15px;
+    height: 15px;
   }
 
   .image__text_wrapper {
-    height: 120px;
+    height: 0;
     padding: 10px;
     font-size: 14px;
   }
