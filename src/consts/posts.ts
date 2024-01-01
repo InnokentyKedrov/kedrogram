@@ -58,20 +58,6 @@ export const posts = [
     text: 'Макарьевская ярмарка',
   },
   {
-    title: 'Муром',
-    data: '2023 год',
-    category: ['all'],
-    photos: ['/other/murom/fone.jpg'],
-    text: 'Муром',
-  },
-  {
-    title: 'Храмы Владимирской Руси',
-    data: '2023 год',
-    category: ['all'],
-    photos: ['/other/vladimir/fone.jpg'],
-    text: 'Храмы Владимирской Руси',
-  },
-  {
     title: 'Ергаки',
     data: '2011 год',
     category: ['all', 'big'],
