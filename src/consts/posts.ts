@@ -29,7 +29,7 @@ export const posts = [
       '/nizh/ny2024/14.jpg',
       '/nizh/ny2024/15.jpg',
     ],
-    text: 'Текст про Новый год',
+    text: 'Всех с Новым 2024 годом!',
   },
   {
     title: 'Макарий',
@@ -55,21 +55,21 @@ export const posts = [
       '/nizh/makaryi/16.jpg',
       '/nizh/makaryi/17.jpg',
     ],
-    text: 'Текст про Макарий',
+    text: 'Макарьевская ярмарка',
   },
   {
     title: 'Муром',
     data: '2023 год',
     category: ['all'],
     photos: ['/other/murom/fone.jpg'],
-    text: 'Текст про Муром',
+    text: 'Муром',
   },
   {
     title: 'Храмы Владимирской Руси',
     data: '2023 год',
     category: ['all'],
     photos: ['/other/vladimir/fone.jpg'],
-    text: 'Текст про Храмы Владимирской Руси',
+    text: 'Храмы Владимирской Руси',
   },
   {
     title: 'Ергаки',
@@ -84,6 +84,6 @@ export const posts = [
       '/camp/ergaki/puteshest_55b.jpg',
       '/camp/ergaki/puteshest_56b.jpg',
     ],
-    text: 'Текст про Ергаки',
+    text: 'Ергаки',
   },
 ];
