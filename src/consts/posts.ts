@@ -8,6 +8,30 @@ export type PostsType = {
 
 export const posts = [
   {
+    title: 'Новый год 2024',
+    data: '2023 год',
+    category: ['all', 'nizh'],
+    photos: [
+      '/nizh/ny2024/0.jpg',
+      '/nizh/ny2024/1.jpg',
+      '/nizh/ny2024/2.jpg',
+      '/nizh/ny2024/3.jpg',
+      '/nizh/ny2024/4.jpg',
+      '/nizh/ny2024/5.jpg',
+      '/nizh/ny2024/6.jpg',
+      '/nizh/ny2024/7.jpg',
+      '/nizh/ny2024/8.jpg',
+      '/nizh/ny2024/9.jpg',
+      '/nizh/ny2024/10.jpg',
+      '/nizh/ny2024/11.jpg',
+      '/nizh/ny2024/12.jpg',
+      '/nizh/ny2024/13.jpg',
+      '/nizh/ny2024/14.jpg',
+      '/nizh/ny2024/15.jpg',
+    ],
+    text: 'Текст про Новый год',
+  },
+  {
     title: 'Макарий',
     data: '2023 год',
     category: ['all', 'nizh'],
