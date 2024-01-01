@@ -13,24 +13,10 @@ const Slider = ({ photos, setSlider, text, width }: PropsType) => {
   const [position, setPosition] = useState<number>(0);
   const [leftDisabled, setLeftDisabled] = useState<boolean>(false);
   const [rightDisabled, setRightDisabled] = useState<boolean>(false);
-
-  const left = () => {
-    if (!leftDisabled) {
-      if (position !== 0) setPosition(position + width);
-      if (rightDisabled) setRightDisabled(false);
-    }
-  };
-
-  const right = () => {
-    if (!rightDisabled) {
-      if (position !== (1 - photos.length) * width) setPosition(position - width);
-      if (leftDisabled) setLeftDisabled(false);
-    }
-  };
-
+  
   useEffect(() => {
-    if (position === 0) setLeftDisabled(true);
-    if (position === (1 - photos.length) * width) setRightDisabled(true);
+    setLeftDisabled(position === 0);
+    setRightDisabled(position === (1 - photos.length) * width);
   }, [position, photos.length, width]);
 
   return (
@@ -44,20 +30,20 @@ const Slider = ({ photos, setSlider, text, width }: PropsType) => {
       <div className={styles.slider}>
         <ul className={styles.slider__list}>
           {photos.map((el, index) => {
-            return <Photo key={index} position={`${position}vw`} photo={el} />;
+            return <Photo key={index} position={position} photo={el} setPosition={setPosition} width={width} leftDisabled={leftDisabled} rightDisabled={rightDisabled} />;
           })}
           {!leftDisabled && (
             <button
               className={`${styles.button} ${styles.button__left}`}
               type="button"
-              onClick={left}
+              onClick={() => setPosition(position + width)}
             ></button>
           )}
           {!rightDisabled && (
             <button
               className={`${styles.button} ${styles.button__right}`}
               type="button"
-              onClick={right}
+              onClick={() => setPosition(position - width)}
             ></button>
           )}
         </ul>
