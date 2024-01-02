@@ -1,12 +1,10 @@
 .slider__item {
-  position: relative;
-
   display: flex;
 
   width: 100%;
   margin: 3vh 0;
 
-  transition: left 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .slider__image {

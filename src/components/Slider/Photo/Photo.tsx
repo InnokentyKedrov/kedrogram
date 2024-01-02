@@ -42,7 +42,7 @@ const Photo = ({ position, photo, setPosition, width, leftDisabled, rightDisable
   }
 
   return (
-    <li className={styles.slider__item} style={{ left: `${position}px` }}>
+    <li className={styles.slider__item} style={{ transform: `translateX(${position}px)` }}>
       <div
         className={styles.slider__image}
         style={{ backgroundImage: `url(${photo})` }}
