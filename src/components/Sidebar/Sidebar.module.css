@@ -33,6 +33,11 @@
   transition: transform 0.4s ease-in-out;
 }
 
+.item_active {
+  transform: translateX(16px);
+  cursor: initial;
+}
+
 .item:hover {
   transform: translateX(16px);
 }
@@ -92,6 +97,10 @@
 
   .item {
     margin: 0;
+  }
+
+  .item_active {
+    transform: translateY(6px);
   }
 
   .item:hover {
