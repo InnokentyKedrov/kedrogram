@@ -18,13 +18,34 @@ const Sidebar = ({ setCurrentPosts }: PropsType) => {
   return (
     <aside className={styles.sidebar}>
       <ul className={styles.list}>
-        <li className={activeCategory === 'all' ? `${styles.item} ${styles.item_home} ${styles.item_active}` : `${styles.item} ${styles.item_home}`} onClick={() => categoryClick('all')}>
+        <li
+          className={
+            activeCategory === 'all'
+              ? `${styles.item} ${styles.item_home} ${styles.item_active}`
+              : `${styles.item} ${styles.item_home}`
+          }
+          onClick={() => categoryClick('all')}
+        >
           <span>Все посты</span>
         </li>
-        <li className={activeCategory === 'big' ? `${styles.item} ${styles.item_camp} ${styles.item_active}` : `${styles.item} ${styles.item_camp}`} onClick={() => categoryClick('big')}>
+        <li
+          className={
+            activeCategory === 'big'
+              ? `${styles.item} ${styles.item_camp} ${styles.item_active}`
+              : `${styles.item} ${styles.item_camp}`
+          }
+          onClick={() => categoryClick('big')}
+        >
           <span>Большие походы</span>
         </li>
-        <li className={activeCategory === 'nizh' ? `${styles.item} ${styles.item_deer} ${styles.item_active}` : `${styles.item} ${styles.item_deer}`} onClick={() => categoryClick('nizh')}>
+        <li
+          className={
+            activeCategory === 'nizh'
+              ? `${styles.item} ${styles.item_deer} ${styles.item_active}`
+              : `${styles.item} ${styles.item_deer}`
+          }
+          onClick={() => categoryClick('nizh')}
+        >
           <span>Нижегородская область</span>
         </li>
       </ul>

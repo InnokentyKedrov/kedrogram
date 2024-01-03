@@ -2,6 +2,7 @@
 *.jsx
 *.ts
 *.js
+*.cjs
 *.md
 *.svg
 *.html

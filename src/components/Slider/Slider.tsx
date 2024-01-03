@@ -13,7 +13,7 @@ const Slider = ({ photos, setSlider, text, width }: PropsType) => {
   const [position, setPosition] = useState<number>(0);
   const [leftDisabled, setLeftDisabled] = useState<boolean>(false);
   const [rightDisabled, setRightDisabled] = useState<boolean>(false);
-  
+
   useEffect(() => {
     setLeftDisabled(position === 0);
     setRightDisabled(position === (1 - photos.length) * width);
@@ -30,7 +30,17 @@ const Slider = ({ photos, setSlider, text, width }: PropsType) => {
       <div className={styles.slider}>
         <ul className={styles.slider__list}>
           {photos.map((el, index) => {
-            return <Photo key={index} position={position} photo={el} setPosition={setPosition} width={width} leftDisabled={leftDisabled} rightDisabled={rightDisabled} />;
+            return (
+              <Photo
+                key={index}
+                position={position}
+                photo={el}
+                setPosition={setPosition}
+                width={width}
+                leftDisabled={leftDisabled}
+                rightDisabled={rightDisabled}
+              />
+            );
           })}
           {!leftDisabled && (
             <button

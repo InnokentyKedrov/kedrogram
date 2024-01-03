@@ -34,8 +34,8 @@
 }
 
 .item_active {
-  transform: translateX(16px);
   cursor: initial;
+  transform: translateX(16px);
 }
 
 .item:hover {
