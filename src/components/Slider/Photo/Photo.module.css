@@ -18,7 +18,9 @@
   width: 30vw;
   margin: auto;
   padding: 32px;
+
   font-size: 2vw;
+  white-space: pre-wrap
 }
 
 @media (width < 1024px) {
