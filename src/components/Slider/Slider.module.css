@@ -158,6 +158,8 @@
   }
 
   .image__text_wrapper {
+    height: 0;
+    padding: 10px;
     font-size: 14px;
   }
 }
