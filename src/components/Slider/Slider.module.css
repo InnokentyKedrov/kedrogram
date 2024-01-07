@@ -110,8 +110,6 @@
 }
 
 .image__text_wrapper {
-  position: absolute;
-  right: -30vw;
   width: 30vw;
   padding: 32px;
 }
@@ -160,8 +158,6 @@
   }
 
   .image__text_wrapper {
-    height: 0;
-    padding: 10px;
     font-size: 14px;
   }
 }
