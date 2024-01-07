@@ -36,8 +36,8 @@ const Post = ({ title, data, photos, setSlider, setCurrentPhotos, setCurrentTitl
       {photos.length > 1 && (
         <img className={styles.gallery} src={gallery} alt="Галерея фотографий." />
       )}
-      {hover && <span>{title}</span>}
-      {hover && <span>{data}</span>}
+      <span className={hover ? styles.item__text_hover : styles.item__text_hidden}>{title}</span>
+      <span className={hover ? styles.item__text_hover : styles.item__text_hidden}>{data}</span>
     </li>
   );
 };

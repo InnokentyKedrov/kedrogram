@@ -7,7 +7,7 @@
 
 .slider__image {
   width: 50vw;
-  min-height: 150vw;
+  min-height: 100%;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -15,7 +15,10 @@
 }
 
 .image__text {
-  margin: 0;
+  width: 30vw;
+  margin: auto;
+  padding: 32px;
+  font-size: 2vw;
 }
 
 @media (width < 1024px) {
@@ -24,11 +27,11 @@
   }
   
   .slider__image {
-    width: 70vw;
+    width: 55vw;
   }
 
   .image__text {
-    width: 100%;
+    width: 35vw;
   }
 }
 
@@ -40,9 +43,11 @@
 
   .slider__image {
     width: 100vw;
+    min-height: 150vw;
   }
 
   .image__text {
+    width: 100%;
     padding: 10px;
     font-size: 14px;
   }

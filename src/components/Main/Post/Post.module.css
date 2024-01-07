@@ -28,6 +28,17 @@
   height: 30px;
 }
 
+.item__text_hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.item__text_hover {
+  text-shadow: #000 1px 1px 2px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
 @media (width < 768px) {
   .item {
     height: calc((var(--main-width) - 2 * 4px) / 3);
