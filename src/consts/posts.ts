@@ -34,7 +34,7 @@ export const posts = [
       { src: '/mariel/urino/5.jpg', alt: '' },
       { src: '/mariel/urino/6.jpg', alt: '' },
       { src: '/mariel/urino/7.jpg', alt: '' },
-      { src: '/mariel/urino/8.jpg', alt: '' },
+      { src: '/mariel/urino/8.jpg', alt: 'Два перехода. На переднем плане господский: широкий и красивый. На заднем плане для прислуги: узкий и низкий, чтобы не встречаться.' },
       { src: '/mariel/urino/9.jpg', alt: '' },
       { src: '/mariel/urino/10.jpg', alt: '' },
       { src: '/mariel/urino/11.jpg', alt: '' },
