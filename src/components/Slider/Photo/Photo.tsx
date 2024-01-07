@@ -1,16 +1,26 @@
 import { Dispatch, useState } from 'react';
 import styles from './Photo.module.css';
+import { PhotosType } from '../../../consts/posts';
 
 type PropsType = {
   position: number;
-  photo: string;
+  photo: PhotosType;
   setPosition: Dispatch<number>;
   width: number;
   leftDisabled: boolean;
   rightDisabled: boolean;
+  title: string;
 };
 
-const Photo = ({ position, photo, setPosition, width, leftDisabled, rightDisabled }: PropsType) => {
+const Photo = ({
+  position,
+  photo,
+  setPosition,
+  width,
+  leftDisabled,
+  rightDisabled,
+  title,
+}: PropsType) => {
   const [touchStart, setTouchStart] = useState<number>(0);
   const [pos1, setPos1] = useState<number>(0);
   const [pos2, setPos2] = useState<number>(0);
@@ -46,11 +56,12 @@ const Photo = ({ position, photo, setPosition, width, leftDisabled, rightDisable
     <li className={styles.slider__item} style={{ transform: `translateX(${position}px)` }}>
       <div
         className={styles.slider__image}
-        style={{ backgroundImage: `url(${photo})` }}
+        style={{ backgroundImage: `url(${photo.src})` }}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       ></div>
+      <p className={styles.image__text}>{photo.alt || title}</p>
     </li>
   );
 };

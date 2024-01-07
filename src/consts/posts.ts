@@ -112,7 +112,7 @@ export const posts = [
   },
   {
     title: 'Новый год 2024',
-    data: '2023 год',
+    data: '30 декабря 2023 года',
     category: ['all', 'nizh'],
     photos: [
       { src: '/nizh/ny2024/0.jpg', alt: '' },
@@ -135,7 +135,7 @@ export const posts = [
   },
   {
     title: 'Макарий',
-    data: '2023 год',
+    data: '2 декабря 2023 года',
     category: ['all', 'nizh'],
     photos: [
       { src: '/nizh/makaryi/0.jpg', alt: '' },

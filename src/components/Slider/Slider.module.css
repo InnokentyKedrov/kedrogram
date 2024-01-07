@@ -109,23 +109,13 @@
   list-style-type: none;
 }
 
-.image__text_wrapper {
-  width: 30vw;
-  padding: 32px;
-}
-
-.image__text_wrapper p {
-  margin: 0;
-}
-
 @media (width < 1024px) {
   .slider {
     flex-direction: column;
     width: 70%;
   }
 
-  .slider__list,
-  .image__text_wrapper {
+  .slider__list {
     width: 100%;
   }
 
@@ -140,26 +130,26 @@
 
 @media (width < 768px) {
   .slider {
-    overflow-y: scroll;
     width: 100vw;
     height: 100%;
   }
 
-  .button__left {
-    left: 5vw;
+  .slider__list {
+    overflow-y: scroll;
+  }
+
+  .button__left,
+  .button__right {
+    top: calc(75vw - 15px);
     width: 30px;
     height: 30px;
+  }
+
+  .button__left {
+    left: 5vw;
   }
 
   .button__right {
     left: 87vw;
-    width: 30px;
-    height: 30px;
-  }
-
-  .image__text_wrapper {
-    height: 0;
-    padding: 10px;
-    font-size: 14px;
   }
 }

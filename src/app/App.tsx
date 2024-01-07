@@ -29,16 +29,19 @@ const App = () => {
 
   return (
     <section className={styles.app}>
-      <Header />
-      <Main
-        currentPosts={currentPosts}
-        setSlider={setSlider}
-        setCurrentPhotos={setCurrentPhotos}
-        setCurrentTitle={setCurrentTitle}
-      />
-      <Sidebar setCurrentPosts={setCurrentPosts} />
-      {slider && (
+      {slider ? (
         <Slider title={currentTitle} photos={currentPhotos} setSlider={setSlider} width={width} />
+      ) : (
+        <>
+          <Header />
+          <Main
+            currentPosts={currentPosts}
+            setSlider={setSlider}
+            setCurrentPhotos={setCurrentPhotos}
+            setCurrentTitle={setCurrentTitle}
+          />
+          <Sidebar setCurrentPosts={setCurrentPosts} />
+        </>
       )}
     </section>
   );

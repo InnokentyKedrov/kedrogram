@@ -32,37 +32,33 @@ const Slider = ({ title, photos, setSlider, width }: PropsType) => {
         <ul className={styles.slider__list}>
           {photos.map((el, index) => {
             return (
-              <>
-                <Photo
-                  key={index}
-                  position={position}
-                  photo={el.src}
-                  setPosition={setPosition}
-                  width={width}
-                  leftDisabled={leftDisabled}
-                  rightDisabled={rightDisabled}
-                />
-              </>
+              <Photo
+                key={index}
+                position={position}
+                photo={el}
+                setPosition={setPosition}
+                width={width}
+                leftDisabled={leftDisabled}
+                rightDisabled={rightDisabled}
+                title={title}
+              />
             );
           })}
-          {!leftDisabled && (
-            <button
-              className={`${styles.button} ${styles.button__left}`}
-              type="button"
-              onClick={() => setPosition(position + width)}
-            ></button>
-          )}
-          {!rightDisabled && (
-            <button
-              className={`${styles.button} ${styles.button__right}`}
-              type="button"
-              onClick={() => setPosition(position - width)}
-            ></button>
-          )}
         </ul>
-        <div className={styles.image__text_wrapper}>
-          <p className={styles.image__text}>{title}</p>
-        </div>
+        {!leftDisabled && (
+          <button
+            className={`${styles.button} ${styles.button__left}`}
+            type="button"
+            onClick={() => setPosition(position + width)}
+          ></button>
+        )}
+        {!rightDisabled && (
+          <button
+            className={`${styles.button} ${styles.button__right}`}
+            type="button"
+            onClick={() => setPosition(position - width)}
+          ></button>
+        )}
       </div>
     </div>
   );
