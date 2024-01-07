@@ -70,7 +70,7 @@ export const posts = [
     ],
   },
   {
-    title: 'Карл Брюллов ',
+    title: 'Карл Брюллов "Гадающая Светлана"',
     data: '5 января 2024 года',
     category: ['all', 'nizh'],
     photos: [
