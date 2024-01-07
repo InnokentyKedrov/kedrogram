@@ -1,16 +1,16 @@
-import { Dispatch, SetStateAction } from 'react';
-import { PostsType } from '../../consts/posts';
+import { Dispatch } from 'react';
+import { PhotosType, PostsType } from '../../consts/posts';
 import styles from './Main.module.css';
 import Post from './Post/Post';
 
 type PropsType = {
   currentPosts: PostsType[];
-  setSlider: Dispatch<SetStateAction<boolean>>;
-  setCurrentPhotos: Dispatch<string[]>;
-  setCurrentText: Dispatch<string>;
+  setSlider: Dispatch<boolean>;
+  setCurrentPhotos: Dispatch<PhotosType[]>;
+  setCurrentTitle: Dispatch<string>;
 };
 
-const Main = ({ currentPosts, setSlider, setCurrentPhotos, setCurrentText }: PropsType) => {
+const Main = ({ currentPosts, setSlider, setCurrentPhotos, setCurrentTitle }: PropsType) => {
   return (
     <main className={styles.main}>
       <div className={styles.list__wrapper}>
@@ -19,13 +19,12 @@ const Main = ({ currentPosts, setSlider, setCurrentPhotos, setCurrentText }: Pro
             return (
               <Post
                 key={el.title}
-                text={el.text}
                 title={el.title}
                 data={el.data}
                 photos={el.photos}
                 setSlider={setSlider}
                 setCurrentPhotos={setCurrentPhotos}
-                setCurrentText={setCurrentText}
+                setCurrentTitle={setCurrentTitle}
               />
             );
           })}

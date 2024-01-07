@@ -1,10 +1,10 @@
-import { Dispatch, SetStateAction, useState } from 'react';
+import { Dispatch, useState } from 'react';
 import styles from './Photo.module.css';
 
 type PropsType = {
   position: number;
   photo: string;
-  setPosition: Dispatch<SetStateAction<number>>;
+  setPosition: Dispatch<number>;
   width: number;
   leftDisabled: boolean;
   rightDisabled: boolean;

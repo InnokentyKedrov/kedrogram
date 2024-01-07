@@ -1,9 +1,9 @@
-import { Dispatch, SetStateAction, useState } from 'react';
+import { Dispatch, useState } from 'react';
 import { PostsType, posts } from '../../consts/posts';
 import styles from './Sidebar.module.css';
 
 type PropsType = {
-  setCurrentPosts: Dispatch<SetStateAction<PostsType[]>>;
+  setCurrentPosts: Dispatch<PostsType[]>;
 };
 
 const Sidebar = ({ setCurrentPosts }: PropsType) => {

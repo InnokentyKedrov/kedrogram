@@ -3,16 +3,16 @@ import Header from '../components/Header/Header';
 import Main from '../components/Main/Main';
 import Sidebar from '../components/Sidebar/Sidebar';
 import styles from './App.module.css';
-import { PostsType, posts } from '../consts/posts';
+import { PhotosType, PostsType, posts } from '../consts/posts';
 import Slider from '../components/Slider/Slider';
 import { handleResizeWindow } from '../consts/resize';
 
 const App = () => {
   const [width, setWidth] = useState<number>(handleResizeWindow());
   const [slider, setSlider] = useState<boolean>(false);
-  const [currentText, setCurrentText] = useState<string>('');
-  const [currentPhotos, setCurrentPhotos] = useState<string[]>([]);
+  const [currentPhotos, setCurrentPhotos] = useState<PhotosType[]>([]);
   const [currentPosts, setCurrentPosts] = useState<PostsType[]>(posts);
+  const [currentTitle, setCurrentTitle] = useState<string>('');
 
   useEffect(() => {
     document.body.style.overflow = slider ? 'hidden' : 'unset';
@@ -34,11 +34,11 @@ const App = () => {
         currentPosts={currentPosts}
         setSlider={setSlider}
         setCurrentPhotos={setCurrentPhotos}
-        setCurrentText={setCurrentText}
+        setCurrentTitle={setCurrentTitle}
       />
       <Sidebar setCurrentPosts={setCurrentPosts} />
       {slider && (
-        <Slider photos={currentPhotos} setSlider={setSlider} text={currentText} width={width} />
+        <Slider title={currentTitle} photos={currentPhotos} setSlider={setSlider} width={width} />
       )}
     </section>
   );

@@ -110,6 +110,8 @@
 }
 
 .image__text_wrapper {
+  position: absolute;
+  right: -30vw;
   width: 30vw;
   padding: 32px;
 }

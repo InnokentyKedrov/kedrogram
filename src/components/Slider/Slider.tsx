@@ -1,15 +1,16 @@
 import { Dispatch, SetStateAction, useState, useEffect } from 'react';
 import styles from './Slider.module.css';
 import Photo from './Photo/Photo';
+import { PhotosType } from '../../consts/posts';
 
 type PropsType = {
-  photos: string[];
+  title: string;
+  photos: PhotosType[];
   setSlider: Dispatch<SetStateAction<boolean>>;
-  text: string;
   width: number;
 };
 
-const Slider = ({ photos, setSlider, text, width }: PropsType) => {
+const Slider = ({ title, photos, setSlider, width }: PropsType) => {
   const [position, setPosition] = useState<number>(0);
   const [leftDisabled, setLeftDisabled] = useState<boolean>(false);
   const [rightDisabled, setRightDisabled] = useState<boolean>(false);
@@ -31,15 +32,17 @@ const Slider = ({ photos, setSlider, text, width }: PropsType) => {
         <ul className={styles.slider__list}>
           {photos.map((el, index) => {
             return (
-              <Photo
-                key={index}
-                position={position}
-                photo={el}
-                setPosition={setPosition}
-                width={width}
-                leftDisabled={leftDisabled}
-                rightDisabled={rightDisabled}
-              />
+              <>
+                <Photo
+                  key={index}
+                  position={position}
+                  photo={el.src}
+                  setPosition={setPosition}
+                  width={width}
+                  leftDisabled={leftDisabled}
+                  rightDisabled={rightDisabled}
+                />
+              </>
             );
           })}
           {!leftDisabled && (
@@ -57,9 +60,8 @@ const Slider = ({ photos, setSlider, text, width }: PropsType) => {
             ></button>
           )}
         </ul>
-
         <div className={styles.image__text_wrapper}>
-          <p className={styles.image__text}>{text}</p>
+          <p className={styles.image__text}>{title}</p>
         </div>
       </div>
     </div>
