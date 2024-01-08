@@ -85,7 +85,10 @@
 
 @media (width < 768px) {
   .sidebar {
-    padding: 2vh 0;
+    height: 20px;
+    margin-top: 9px;
+    padding: 10px;
+
     border-top: 1px solid rgb(var(--border-color));
     border-right: none;
   }
