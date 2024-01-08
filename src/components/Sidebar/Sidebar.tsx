@@ -18,13 +18,14 @@ const Sidebar = ({ setCurrentPosts }: PropsType) => {
   return (
     <aside className={styles.sidebar}>
       <ul className={styles.list}>
-        <li className={styles.item} onClick={() => categoryClick('all')}>
+        <li
+          className={
+            activeCategory === 'all' ? `${styles.item} ${styles.item_active}` : styles.item
+          }
+          onClick={() => categoryClick('all')}
+        >
           <svg
-            className={
-              activeCategory === 'all'
-                ? `${styles.item__image} ${styles.item__image_active}`
-                : styles.item__image
-            }
+            className={styles.item__image}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -35,13 +36,14 @@ const Sidebar = ({ setCurrentPosts }: PropsType) => {
           </svg>
           <span>Все посты</span>
         </li>
-        <li className={styles.item} onClick={() => categoryClick('big')}>
+        <li
+          className={
+            activeCategory === 'big' ? `${styles.item} ${styles.item_active}` : styles.item
+          }
+          onClick={() => categoryClick('big')}
+        >
           <svg
-            className={
-              activeCategory === 'big'
-                ? `${styles.item__image} ${styles.item__image_active}`
-                : styles.item__image
-            }
+            className={styles.item__image}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -52,13 +54,14 @@ const Sidebar = ({ setCurrentPosts }: PropsType) => {
           </svg>
           <span>Большие походы</span>
         </li>
-        <li className={styles.item} onClick={() => categoryClick('nizh')}>
+        <li
+          className={
+            activeCategory === 'nizh' ? `${styles.item} ${styles.item_active}` : styles.item
+          }
+          onClick={() => categoryClick('nizh')}
+        >
           <svg
-            className={
-              activeCategory === 'nizh'
-                ? `${styles.item__image} ${styles.item__image_active}`
-                : styles.item__image
-            }
+            className={styles.item__image}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
