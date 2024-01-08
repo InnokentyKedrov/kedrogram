@@ -30,7 +30,7 @@
   background-position: left;
   background-size: 3vh;
 
-  transition: transform 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .item_active {
@@ -42,28 +42,9 @@
   transform: translateX(16px);
 }
 
-.item_home {
-  background-image: url('../../assets/icons/home_dark.svg');
-}
-
-[data-theme='dark'] .item_home {
-  background-image: url('../../assets/icons/home_light.svg');
-}
-
-.item_camp {
-  background-image: url('../../assets/icons/camp_dark.svg');
-}
-
-[data-theme='dark'] .item_camp {
-  background-image: url('../../assets/icons/camp_light.svg');
-}
-
-.item_deer {
-  background-image: url('../../assets/icons/deer_dark.svg');
-}
-
-[data-theme='dark'] .item_deer {
-  background-image: url('../../assets/icons/deer_light.svg');
+.item__image {
+  width: 20px;
+  height: 20px;
 }
 
 @media (width < 1160px) {
@@ -98,11 +79,7 @@
     margin: 0;
   }
 
-  .item_active {
-    transform: translateY(6px);
-  }
-
-  .item:hover {
-    transform: translateY(6px);
+  .item__image_active {
+    color: rgb(255 0 0 / 90%);
   }
 }
