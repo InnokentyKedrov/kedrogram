@@ -23,7 +23,7 @@
 
 @media (width < 768px) {
   .main {
-    height: calc(100dvh - 130px);
+    height: calc(100dvh - 110px);
     margin: 0;
     padding: 0;
   }
