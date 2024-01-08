@@ -35,16 +35,24 @@
 
 .item_active {
   cursor: initial;
-  transform: translateX(16px);
+  color: rgb(255 0 0 / 90%);
 }
 
 .item:hover {
   transform: translateX(16px);
 }
 
+.item_active:hover {
+  transform: translateX(0);
+}
+
 .item__image {
   width: 20px;
   height: 20px;
+}
+
+.item span {
+  margin-left: 10px;
 }
 
 @media (width < 1160px) {
@@ -79,7 +87,7 @@
     margin: 0;
   }
 
-  .item__image_active {
-    color: rgb(255 0 0 / 90%);
+  .item:hover {
+    transform: none;
   }
 }
