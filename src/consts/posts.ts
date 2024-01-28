@@ -12,8 +12,41 @@ export type PostsType = {
 
 export const posts = [
   {
-    title: 'Благовещенский монастырь',
+    title: 'Лыжи Морозко 2',
+    data: '21 января 2024 года',
+    category: ['all', 'ligi12024'],
+    photos: [
+      { src: '/nizh/ligi22024/0.jpg', alt: 'Лыжи Морозко 2' },
+      { src: '/nizh/ligi22024/1.jpg', alt: '' },
+      { src: '/nizh/ligi22024/2.jpg', alt: '' },
+      { src: '/nizh/ligi22024/3.jpg', alt: '' },
+      { src: '/nizh/ligi22024/4.jpg', alt: '' },
+      { src: '/nizh/ligi22024/5.jpg', alt: '' },
+      { src: '/nizh/ligi22024/6.jpg', alt: '' },
+      { src: '/nizh/ligi22024/7.jpg', alt: '' },
+      { src: '/nizh/ligi22024/8.jpg', alt: '' },
+      { src: '/nizh/ligi22024/9.jpg', alt: '' },
+      { src: '/nizh/ligi22024/10.jpg', alt: '' },
+    ],
+  },
+  {
+    title: 'Лыжи Морозко 1',
     data: '14 января 2024 года',
+    category: ['all', 'ligi12024'],
+    photos: [
+      { src: '/nizh/ligi12024/0.jpg', alt: 'Лыжи Морозко 1' },
+      { src: '/nizh/ligi12024/1.jpg', alt: '' },
+      { src: '/nizh/ligi12024/2.jpg', alt: '' },
+      { src: '/nizh/ligi12024/3.jpg', alt: '' },
+      { src: '/nizh/ligi12024/4.jpg', alt: '' },
+      { src: '/nizh/ligi12024/5.jpg', alt: '' },
+      { src: '/nizh/ligi12024/6.jpg', alt: '' },
+      { src: '/nizh/ligi12024/7.jpg', alt: '' },
+    ],
+  },
+  {
+    title: 'Благовещенский монастырь',
+    data: '8 января 2024 года',
     category: ['all', 'nizh'],
     photos: [
       { src: '/nizh/blagovest/0.jpg', alt: 'Благовещенский монастырь' },
