@@ -336,6 +336,23 @@ export const posts = [
     ],
   },
   {
+    title: 'Противолавинный барьер',
+    data: '23 августа 2023 года',
+    category: ['all', 'big'],
+    photos: [
+      { src: '/camp/zikkur/0.jpg', alt: 'Противолавинный барьер' },
+      { src: '/camp/zikkur/1.jpg', alt: '' },
+      { src: '/camp/zikkur/2.jpg', alt: '' },
+      { src: '/camp/zikkur/3.jpg', alt: '' },
+      { src: '/camp/zikkur/4.jpg', alt: '' },
+      { src: '/camp/zikkur/5.jpg', alt: '' },
+      { src: '/camp/zikkur/6.jpg', alt: '' },
+      { src: '/camp/zikkur/7.jpg', alt: '' },
+      { src: '/camp/zikkur/8.jpg', alt: '' },
+      { src: '/camp/zikkur/9.jpg', alt: '' },
+    ],
+  },
+  {
     title: 'Чегет',
     data: '24 августа 2023 года',
     category: ['all', 'big'],
