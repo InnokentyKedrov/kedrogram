@@ -4,13 +4,12 @@ import Photo from './Photo/Photo';
 import { PhotosType } from '../../consts/posts';
 
 type PropsType = {
-  title: string;
   photos: PhotosType[];
   setSlider: Dispatch<SetStateAction<boolean>>;
   width: number;
 };
 
-const Slider = ({ title, photos, setSlider, width }: PropsType) => {
+const Slider = ({ photos, setSlider, width }: PropsType) => {
   const [position, setPosition] = useState<number>(0);
   const [leftDisabled, setLeftDisabled] = useState<boolean>(false);
   const [rightDisabled, setRightDisabled] = useState<boolean>(false);
@@ -40,7 +39,6 @@ const Slider = ({ title, photos, setSlider, width }: PropsType) => {
                 width={width}
                 leftDisabled={leftDisabled}
                 rightDisabled={rightDisabled}
-                title={title}
               />
             );
           })}

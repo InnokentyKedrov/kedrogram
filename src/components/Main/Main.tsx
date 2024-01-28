@@ -7,10 +7,9 @@ type PropsType = {
   currentPosts: PostsType[];
   setSlider: Dispatch<boolean>;
   setCurrentPhotos: Dispatch<PhotosType[]>;
-  setCurrentTitle: Dispatch<string>;
 };
 
-const Main = ({ currentPosts, setSlider, setCurrentPhotos, setCurrentTitle }: PropsType) => {
+const Main = ({ currentPosts, setSlider, setCurrentPhotos }: PropsType) => {
   return (
     <main className={styles.main}>
       <div className={styles.list__wrapper}>
@@ -24,7 +23,6 @@ const Main = ({ currentPosts, setSlider, setCurrentPhotos, setCurrentTitle }: Pr
                 photos={el.photos}
                 setSlider={setSlider}
                 setCurrentPhotos={setCurrentPhotos}
-                setCurrentTitle={setCurrentTitle}
               />
             );
           })}

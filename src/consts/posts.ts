@@ -13,10 +13,10 @@ export type PostsType = {
 export const posts = [
   {
     title: 'Благовещенский монастырь',
-    data: '5 января 2024 года',
+    data: '14 января 2024 года',
     category: ['all', 'nizh'],
     photos: [
-      { src: '/nizh/blagovest/0.jpg', alt: '' },
+      { src: '/nizh/blagovest/0.jpg', alt: 'Благовещенский монастырь' },
       { src: '/nizh/blagovest/1.jpg', alt: '' },
       { src: '/nizh/blagovest/2.jpg', alt: '' },
       { src: '/nizh/blagovest/3.jpg', alt: '' },
@@ -39,7 +39,7 @@ export const posts = [
     data: '7 января 2024 года',
     category: ['all', 'nizh'],
     photos: [
-      { src: '/nizh/rogdestvo/0.jpg', alt: '' },
+      { src: '/nizh/rogdestvo/0.jpg', alt: 'С Рождеством!' },
       { src: '/nizh/rogdestvo/1.jpg', alt: '' },
       { src: '/nizh/rogdestvo/2.jpg', alt: '' },
     ],
@@ -186,7 +186,7 @@ export const posts = [
     data: '30 декабря 2023 года',
     category: ['all', 'nizh'],
     photos: [
-      { src: '/nizh/ny2024/0.jpg', alt: '' },
+      { src: '/nizh/ny2024/0.jpg', alt: 'Новый год 2024' },
       { src: '/nizh/ny2024/1.jpg', alt: '' },
       { src: '/nizh/ny2024/2.jpg', alt: '' },
       { src: '/nizh/ny2024/3.jpg', alt: '' },
@@ -209,7 +209,7 @@ export const posts = [
     data: '2 декабря 2023 года',
     category: ['all', 'nizh'],
     photos: [
-      { src: '/nizh/makaryi/0.jpg', alt: '' },
+      { src: '/nizh/makaryi/0.jpg', alt: 'Макарий' },
       { src: '/nizh/makaryi/1.jpg', alt: '' },
       { src: '/nizh/makaryi/2.jpg', alt: '' },
       { src: '/nizh/makaryi/3.jpg', alt: '' },
@@ -234,7 +234,7 @@ export const posts = [
     data: '4 ноября 2023 года',
     category: ['all', 'mariel'],
     photos: [
-      { src: '/vlad/murom/0.jpg', alt: '' },
+      { src: '/vlad/murom/0.jpg', alt: 'Муром' },
       { src: '/vlad/murom/1.jpg', alt: '' },
       { src: '/vlad/murom/2.jpg', alt: '' },
       { src: '/vlad/murom/3.jpg', alt: '' },
@@ -307,7 +307,7 @@ export const posts = [
     data: '24 августа 2023 года',
     category: ['all', 'big'],
     photos: [
-      { src: '/camp/cheget/0.jpg', alt: '' },
+      { src: '/camp/cheget/0.jpg', alt: 'Чегет' },
       { src: '/camp/cheget/1.jpg', alt: '' },
       { src: '/camp/cheget/2.jpg', alt: '' },
       { src: '/camp/cheget/3.jpg', alt: '' },
@@ -351,7 +351,7 @@ export const posts = [
     data: '2011 год',
     category: ['all', 'big'],
     photos: [
-      { src: '/camp/ergaki/fone.jpg', alt: '' },
+      { src: '/camp/ergaki/fone.jpg', alt: 'Ергаки' },
       { src: '/camp/ergaki/puteshest_50b.jpg', alt: '' },
       { src: '/camp/ergaki/puteshest_52b.jpg', alt: '' },
       { src: '/camp/ergaki/puteshest_53b.jpg', alt: '' },

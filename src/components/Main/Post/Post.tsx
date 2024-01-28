@@ -9,16 +9,14 @@ type PropsType = {
   photos: PhotosType[];
   setSlider: Dispatch<boolean>;
   setCurrentPhotos: Dispatch<PhotosType[]>;
-  setCurrentTitle: Dispatch<string>;
 };
 
-const Post = ({ title, data, photos, setSlider, setCurrentPhotos, setCurrentTitle }: PropsType) => {
+const Post = ({ title, data, photos, setSlider, setCurrentPhotos }: PropsType) => {
   const [hover, setHover] = useState<boolean>(false);
 
   const postClick: React.MouseEventHandler<HTMLLIElement> = () => {
     setSlider(true);
     setCurrentPhotos(photos);
-    setCurrentTitle(title);
   };
 
   return (

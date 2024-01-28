@@ -12,7 +12,6 @@ const App = () => {
   const [slider, setSlider] = useState<boolean>(false);
   const [currentPhotos, setCurrentPhotos] = useState<PhotosType[]>([]);
   const [currentPosts, setCurrentPosts] = useState<PostsType[]>(posts);
-  const [currentTitle, setCurrentTitle] = useState<string>('');
 
   useEffect(() => {
     document.body.style.overflow = slider ? 'hidden' : 'unset';
@@ -30,7 +29,7 @@ const App = () => {
   return (
     <section className={styles.app}>
       {slider ? (
-        <Slider title={currentTitle} photos={currentPhotos} setSlider={setSlider} width={width} />
+        <Slider photos={currentPhotos} setSlider={setSlider} width={width} />
       ) : (
         <>
           <Header />
@@ -38,7 +37,6 @@ const App = () => {
             currentPosts={currentPosts}
             setSlider={setSlider}
             setCurrentPhotos={setCurrentPhotos}
-            setCurrentTitle={setCurrentTitle}
           />
           <Sidebar setCurrentPosts={setCurrentPosts} />
         </>

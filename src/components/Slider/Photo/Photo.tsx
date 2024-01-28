@@ -9,18 +9,9 @@ type PropsType = {
   width: number;
   leftDisabled: boolean;
   rightDisabled: boolean;
-  title: string;
 };
 
-const Photo = ({
-  position,
-  photo,
-  setPosition,
-  width,
-  leftDisabled,
-  rightDisabled,
-  title,
-}: PropsType) => {
+const Photo = ({ position, photo, setPosition, width, leftDisabled, rightDisabled }: PropsType) => {
   const [touchStart, setTouchStart] = useState<number>(0);
   const [pos1, setPos1] = useState<number>(0);
   const [pos2, setPos2] = useState<number>(0);
@@ -61,7 +52,7 @@ const Photo = ({
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       ></div>
-      <p className={styles.image__text}>{photo.alt || title}</p>
+      <p className={styles.image__text}>{photo.alt}</p>
     </li>
   );
 };
