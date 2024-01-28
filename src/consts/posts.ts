@@ -12,6 +12,29 @@ export type PostsType = {
 
 export const posts = [
   {
+    title: 'Благовещенский монастырь',
+    data: '5 января 2024 года',
+    category: ['all', 'nizh'],
+    photos: [
+      { src: '/nizh/blagovest/0.jpg', alt: '' },
+      { src: '/nizh/blagovest/1.jpg', alt: '' },
+      { src: '/nizh/blagovest/2.jpg', alt: '' },
+      { src: '/nizh/blagovest/3.jpg', alt: '' },
+      { src: '/nizh/blagovest/4.jpg', alt: '' },
+      { src: '/nizh/blagovest/5.jpg', alt: '' },
+      { src: '/nizh/blagovest/6.jpg', alt: '' },
+      { src: '/nizh/blagovest/7.jpg', alt: '' },
+      { src: '/nizh/blagovest/8.jpg', alt: '' },
+      { src: '/nizh/blagovest/9.jpg', alt: '' },
+      { src: '/nizh/blagovest/10.jpg', alt: '' },
+      { src: '/nizh/blagovest/11.jpg', alt: '' },
+      { src: '/nizh/blagovest/12.jpg', alt: '' },
+      { src: '/nizh/blagovest/13.jpg', alt: '' },
+      { src: '/nizh/blagovest/14.jpg', alt: '' },
+      { src: '/nizh/blagovest/15.jpg', alt: '' },
+    ],
+  },
+  {
     title: 'С Рождеством!',
     data: '7 января 2024 года',
     category: ['all', 'nizh'],
