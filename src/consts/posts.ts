@@ -27,9 +27,8 @@ export const posts = [
       { src: '/nizh/ligi42024/8.jpg', alt: '' },
       { src: '/nizh/ligi42024/9.jpg', alt: '' },
       { src: '/nizh/ligi42024/10.jpg', alt: '' },
-      { src: '/nizh/ligi42024/11.jpg', alt: '' },
-      { src: '/nizh/ligi42024/12.jpg', alt: 'Традиционное селфи «<Безумцы»' },
-      { src: '/nizh/ligi42024/13.jpg', alt: '' },
+      { src: '/nizh/ligi42024/11.jpg', alt: 'Традиционное селфи «<Безумцы»' },
+      { src: '/nizh/ligi42024/12.jpg', alt: '' },
     ],
   },
 
