@@ -12,6 +12,28 @@ export type PostsType = {
 
 export const posts = [
   {
+    title: 'Лыжи Морозко 4',
+    data: '17 февраля 2024 года',
+    category: ['all', 'nizh'],
+    photos: [
+      { src: '/nizh/ligi42024/0.jpg', alt: 'Лыжи Морозко 4' },
+      { src: '/nizh/ligi42024/1.jpg', alt: '' },
+      { src: '/nizh/ligi42024/2.jpg', alt: '' },
+      { src: '/nizh/ligi42024/3.jpg', alt: '' },
+      { src: '/nizh/ligi42024/4.jpg', alt: '' },
+      { src: '/nizh/ligi42024/5.jpg', alt: '' },
+      { src: '/nizh/ligi42024/6.jpg', alt: '' },
+      { src: '/nizh/ligi42024/7.jpg', alt: '' },
+      { src: '/nizh/ligi42024/8.jpg', alt: '' },
+      { src: '/nizh/ligi42024/9.jpg', alt: '' },
+      { src: '/nizh/ligi42024/10.jpg', alt: '' },
+      { src: '/nizh/ligi42024/11.jpg', alt: '' },
+      { src: '/nizh/ligi42024/12.jpg', alt: 'Традиционное селфи «<Безумцы»' },
+      { src: '/nizh/ligi42024/13.jpg', alt: '' },
+    ],
+  },
+
+  {
     title: 'Йошкар-Ола',
     data: '9-11 января 2024 года',
     category: ['all', 'mariel'],
@@ -90,6 +112,34 @@ export const posts = [
       { src: '/mariel/yola/71.jpg', alt: '' },
     ],
   },
+  {
+    title: 'Лыжи Снежинка 3',
+    data: '4 февраля 2024 года',
+    category: ['all', 'nizh'],
+    photos: [
+      { src: '/nizh/ligi32024/0.jpg', alt: 'Лыжи Морозко 3' },
+      { src: '/nizh/ligi32024/1.jpg', alt: '' },
+      { src: '/nizh/ligi32024/2.jpg', alt: '' },
+      { src: '/nizh/ligi32024/3.jpg', alt: '' },
+      { src: '/nizh/ligi32024/4.jpg', alt: '' },
+      { src: '/nizh/ligi32024/5.jpg', alt: '' },
+      { src: '/nizh/ligi32024/6.jpg', alt: '' },
+      { src: '/nizh/ligi32024/7.jpg', alt: '' },
+      { src: '/nizh/ligi32024/8.jpg', alt: '' },
+      { src: '/nizh/ligi32024/9.jpg', alt: '' },
+      { src: '/nizh/ligi32024/10.jpg', alt: '' },
+      { src: '/nizh/ligi32024/11.jpg', alt: '' },
+      { src: '/nizh/ligi32024/12.jpg', alt: '' },
+      { src: '/nizh/ligi32024/13.jpg', alt: '' },
+      { src: '/nizh/ligi32024/14.jpg', alt: '' },
+      { src: '/nizh/ligi32024/15.jpg', alt: '' },
+      { src: '/nizh/ligi32024/16.jpg', alt: '' },
+      { src: '/nizh/ligi32024/17.jpg', alt: '' },
+      { src: '/nizh/ligi32024/18.jpg', alt: '' },
+      { src: '/nizh/ligi32024/19.jpg', alt: '' },
+    ],
+  },
+
   {
     title: 'Лыжи Морозко 2',
     data: '21 января 2024 года',
