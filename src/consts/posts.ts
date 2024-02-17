@@ -31,7 +31,6 @@ export const posts = [
       { src: '/nizh/ligi42024/12.jpg', alt: '' },
     ],
   },
-
   {
     title: 'Йошкар-Ола',
     data: '9-11 января 2024 года',
@@ -111,21 +110,22 @@ export const posts = [
       { src: '/mariel/yola/71.jpg', alt: '' },
     ],
   },
-  title: 'Йошкар-Ола',
-  data: '9-11 января 2024 года',
-  category: ['all', 'mariel'],
-  photos: [
-    { src: '/mariel/eda/0.jpg', alt: '' },
-    { src: '/mariel/eda/1.jpg', alt: '' },
-    { src: '/mariel/eda/2.jpg', alt: '' },
-    { src: '/mariel/eda/3.jpg', alt: '' },
-    { src: '/mariel/eda/4.jpg', alt: '' },
-    { src: '/mariel/eda/5.jpg', alt: '' },
-    { src: '/mariel/eda/6.jpg', alt: '' },
-    { src: '/mariel/eda/7.jpg', alt: '' },
-  ],
-},
-{
+  {
+    title: 'Йошкар-Ола',
+    data: '9-11 января 2024 года',
+    category: ['all', 'mariel'],
+    photos: [
+      { src: '/mariel/eda/0.jpg', alt: '' },
+      { src: '/mariel/eda/1.jpg', alt: '' },
+      { src: '/mariel/eda/2.jpg', alt: '' },
+      { src: '/mariel/eda/3.jpg', alt: '' },
+      { src: '/mariel/eda/4.jpg', alt: '' },
+      { src: '/mariel/eda/5.jpg', alt: '' },
+      { src: '/mariel/eda/6.jpg', alt: '' },
+      { src: '/mariel/eda/7.jpg', alt: '' },
+    ],
+  },
+  {
     title: 'Лыжи Снежинка 3',
     data: '4 февраля 2024 года',
     category: ['all', 'nizh'],
