@@ -117,7 +117,7 @@ export const posts = [
     data: '4 февраля 2024 года',
     category: ['all', 'nizh'],
     photos: [
-      { src: '/nizh/ligi32024/0.jpg', alt: 'Лыжи Морозко 3' },
+      { src: '/nizh/ligi32024/0.jpg', alt: 'Лыжи Снежинка 3' },
       { src: '/nizh/ligi32024/1.jpg', alt: '' },
       { src: '/nizh/ligi32024/2.jpg', alt: '' },
       { src: '/nizh/ligi32024/3.jpg', alt: '' },
