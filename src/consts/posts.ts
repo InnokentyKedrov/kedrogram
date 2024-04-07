@@ -226,7 +226,6 @@ export const posts = [
       { src: '/mariel/eda/4.jpg', alt: '' },
       { src: '/mariel/eda/5.jpg', alt: '' },
       { src: '/mariel/eda/6.jpg', alt: '' },
-      { src: '/mariel/eda/7.jpg', alt: '' },
     ],
   },
   {
