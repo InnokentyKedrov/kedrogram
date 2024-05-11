@@ -111,7 +111,7 @@ export const posts = [
     ],
   },
   {
-    title: 'Йошкар-Ола Исторический музей',
+    title: 'Йошкар-Ола\nИсторический музей',
     data: '9-11 января 2024 года',
     category: ['all', 'mariel'],
     photos: [
@@ -215,7 +215,7 @@ export const posts = [
   },
 
   {
-    title: 'Йошкар-Ола',
+    title: 'Йошкар-Ола\nМестная еда',
     data: '9-11 января 2024 года',
     category: ['all', 'mariel'],
     photos: [

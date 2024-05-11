@@ -15,8 +15,8 @@ const Slider = ({ photos, setSlider, width }: PropsType) => {
   const [rightDisabled, setRightDisabled] = useState<boolean>(false);
 
   useEffect(() => {
-    setLeftDisabled(position === 0);
-    setRightDisabled(position === (1 - photos.length) * width);
+    setLeftDisabled(Math.round(position) === 0);
+    setRightDisabled(Math.floor(position - (1 - photos.length) * width) === 0);
   }, [position, photos.length, width]);
 
   return (
