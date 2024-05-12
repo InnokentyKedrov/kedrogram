@@ -20,14 +20,14 @@
   padding: 32px;
 
   font-size: 2vw;
-  white-space: pre-wrap
+  white-space: pre-wrap;
 }
 
 @media (width < 1024px) {
   .slider__item {
     transition: inherit;
   }
-  
+
   .slider__image {
     width: 55vw;
   }

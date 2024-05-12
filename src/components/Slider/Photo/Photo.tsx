@@ -45,13 +45,17 @@ const Photo = ({ position, photo, setPosition, width, leftDisabled, rightDisable
 
   return (
     <li className={styles.slider__item} style={{ transform: `translateX(${position}px)` }}>
-      <div
-        className={styles.slider__image}
-        style={{ backgroundImage: `url(${photo.src})` }}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-      ></div>
+      {photo.src.split('.')[1] === 'jpg' ? (
+        <div
+          className={styles.slider__image}
+          style={{ backgroundImage: `url(${photo.src})` }}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        ></div>
+      ) : (
+        <video className={styles.slider__image} src={`${photo.src}`} autoPlay loop></video>
+      )}
       <p className={styles.image__text}>{photo.alt}</p>
     </li>
   );

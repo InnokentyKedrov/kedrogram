@@ -29,19 +29,17 @@ const Slider = ({ photos, setSlider, width }: PropsType) => {
 
       <div className={styles.slider}>
         <ul className={styles.slider__list}>
-          {photos.map((el, index) => {
-            return (
-              <Photo
-                key={index}
-                position={position}
-                photo={el}
-                setPosition={setPosition}
-                width={width}
-                leftDisabled={leftDisabled}
-                rightDisabled={rightDisabled}
-              />
-            );
-          })}
+          {photos.map((el, index) => (
+            <Photo
+              key={index}
+              position={position}
+              photo={el}
+              setPosition={setPosition}
+              width={width}
+              leftDisabled={leftDisabled}
+              rightDisabled={rightDisabled}
+            />
+          ))}
         </ul>
         {!leftDisabled && (
           <button
