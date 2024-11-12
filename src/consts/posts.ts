@@ -12,6 +12,28 @@ export type PostsType = {
 
 export const posts = [
   {
+    title: 'Болдино 2024',
+    data: '13 октября 2024 года',
+    category: ['all', 'nizh'],
+    photos: [
+      { src: '/nizh/boldino/0.jpg', alt: '' },
+      { src: '/nizh/boldino/1.jpg', alt: '' },
+      { src: '/nizh/boldino/2.jpg', alt: '' },
+      { src: '/nizh/boldino/3.jpg', alt: '' },
+      { src: '/nizh/boldino/4.jpg', alt: '' },
+      { src: '/nizh/boldino/5.jpg', alt: '' },
+      { src: '/nizh/boldino/6.jpg', alt: '' },
+      { src: '/nizh/boldino/7.jpg', alt: '' },
+      { src: '/nizh/boldino/8.jpg', alt: '' },
+      { src: '/nizh/boldino/9.jpg', alt: '' },
+      { src: '/nizh/boldino/10.jpg', alt: '' },
+      { src: '/nizh/boldino/11.jpg', alt: '' },
+      { src: '/nizh/boldino/12.jpg', alt: '' },
+      { src: '/nizh/boldino/13.jpg', alt: '' },
+      { src: '/nizh/boldino/14.jpg', alt: '' },
+    ],
+  },
+  {
     title: 'Лыжи Морозко 4',
     data: '17 февраля 2024 года',
     category: ['all', 'nizh'],
