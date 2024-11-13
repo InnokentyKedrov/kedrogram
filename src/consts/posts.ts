@@ -128,7 +128,7 @@ export const posts = [
   },
   {
     title: 'Йошкар-Ола',
-    data: '9-11 января 2024 года',
+    data: '9-11 февраля 2024 года',
     category: ['all', 'mariel'],
     photos: [
       { src: '/mariel/yola/0.jpg', alt: '' },
@@ -207,7 +207,7 @@ export const posts = [
   },
   {
     title: 'Йошкар-Ола\nИсторический музей',
-    data: '9-11 января 2024 года',
+    data: '9-11 февраля 2024 года',
     category: ['all', 'mariel'],
     photos: [
       { src: '/mariel/histor/0.jpg', alt: '' },
@@ -249,7 +249,7 @@ export const posts = [
   },
   {
     title: 'Йошкар-Ола Художественный музей',
-    data: '9-11 января 2024 года',
+    data: '9-11 февраля 2024 года',
     category: ['all', 'mariel'],
     photos: [
       { src: '/mariel/hud/0.jpg', alt: '' },
@@ -311,7 +311,7 @@ export const posts = [
 
   {
     title: 'Йошкар-Ола\nМестная еда',
-    data: '9-11 января 2024 года',
+    data: '9-11 февраля 2024 года',
     category: ['all', 'mariel'],
     photos: [
       { src: '/mariel/eda/0.jpg', alt: '' },
