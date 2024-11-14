@@ -19,7 +19,7 @@
   margin: auto;
   padding: 32px;
 
-  font-size: 1.6vw;
+  font-size: 3dvh;
   white-space: pre-wrap;
 }
 
@@ -34,6 +34,7 @@
 
   .image__text {
     width: 35vw;
+    font-size: 2.3dvh;
   }
 }
 
