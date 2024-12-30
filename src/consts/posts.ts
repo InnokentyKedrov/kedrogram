@@ -12,7 +12,29 @@ export type PostsType = {
 
 export const posts = [
   {
-    title: 'Оранки 2024',
+    title: 'Богородск',
+    data: '29 декабря 2024 года',
+    category: ['all', 'nizh'],
+    photos: [
+      { src: '/nizh/dacha_dec24/0.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/1.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/2.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/3.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/4.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/5.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/6.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/7.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/8.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/9.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/10.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/11.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/12.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/13.jpg', alt: '' },
+      { src: '/nizh/dacha_dec24/14.jpg', alt: '' },
+    ],
+  },
+  {
+    title: 'Оранки',
     data: '29 декабря 2024 года',
     category: ['all', 'nizh'],
     photos: [
@@ -66,7 +88,7 @@ export const posts = [
     ],
   },
   {
-    title: 'Москва 2024',
+    title: 'Москва',
     data: '22 декабря 2024 года',
     category: ['all', 'moscow'],
     photos: [
@@ -96,7 +118,7 @@ export const posts = [
     ],
   },
   {
-    title: 'Щелоковский хутор 2024',
+    title: 'Щелоковский хутор',
     data: '4 ноября 2024 года',
     category: ['all', 'nizh'],
     photos: [
@@ -150,7 +172,7 @@ export const posts = [
     ],
   },
   {
-    title: 'Болдино 2024',
+    title: 'Болдино',
     data: '13 октября 2024 года',
     category: ['all', 'nizh'],
     photos: [
@@ -172,7 +194,7 @@ export const posts = [
     ],
   },
   {
-    title: 'Болдино. Господский дом 2024',
+    title: 'Болдино. Господский дом',
     data: '13 октября 2024 года',
     category: ['all', 'nizh'],
     photos: [
