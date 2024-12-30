@@ -56,7 +56,7 @@ const Photo = ({ position, photo, setPosition, width, leftDisabled, rightDisable
       ) : (
         <video className={styles.slider__image} src={`${photo.src}`} autoPlay muted loop></video>
       )}
-      <p className={styles.image__text}>{photo.alt}</p>
+      <p className={styles.slider__text}>{photo.alt}</p>
     </li>
   );
 };

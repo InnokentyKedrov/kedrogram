@@ -14,10 +14,15 @@
   background-size: contain;
 }
 
-.image__text {
+.slider__text {
+  overflow: auto;
+  display: flex;
+  align-items: safe center;
+
   width: 30vw;
-  margin: auto;
-  padding: 32px;
+  height: 100%;
+  margin: 0;
+  padding: 0 32px;
 
   font-size: 3dvh;
   white-space: pre-wrap;
@@ -32,7 +37,7 @@
     width: 55vw;
   }
 
-  .image__text {
+  .slider__text {
     width: 35vw;
     font-size: 2.3dvh;
   }
@@ -49,7 +54,7 @@
     min-height: 150vw;
   }
 
-  .image__text {
+  .slider__text {
     width: 100%;
     padding: 10px;
     font-size: 14px;
