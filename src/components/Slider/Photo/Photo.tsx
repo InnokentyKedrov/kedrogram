@@ -54,7 +54,7 @@ const Photo = ({ position, photo, setPosition, width, leftDisabled, rightDisable
           onTouchEnd={handleTouchEnd}
         ></div>
       ) : (
-        <video className={styles.slider__image} src={`${photo.src}`} autoPlay muted loop></video>
+        <video className={styles.slider__image} src={`${photo.src}`} controls></video>
       )}
       <p className={styles.slider__text}>{photo.alt}</p>
     </li>

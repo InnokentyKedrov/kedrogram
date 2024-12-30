@@ -68,7 +68,7 @@
 }
 
 .button__right {
-  left: 56dvw;
+  left: 57dvw;
   transform: rotate(180deg);
 }
 
@@ -132,10 +132,6 @@
   .slider {
     width: 100dvw;
     height: 100%;
-  }
-
-  .slider__list {
-    overflow-y: scroll;
   }
 
   .button__left,
