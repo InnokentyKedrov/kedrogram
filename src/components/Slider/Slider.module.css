@@ -1,6 +1,6 @@
 .slider__wrapper {
   position: fixed;
-  width: 100vw;
+  width: 100dvw;
   height: 100dvh;
   background-color: rgb(var(--background-color));
 }
@@ -26,8 +26,8 @@
 .button__close {
   position: absolute;
   z-index: 1;
-  top: 1vw;
-  right: 1vw;
+  top: 1dvw;
+  right: 1dvw;
 }
 
 .button__close:hover {
@@ -64,11 +64,11 @@
 }
 
 .button__left {
-  left: 11vw;
+  left: 11dvw;
 }
 
 .button__right {
-  left: 56vw;
+  left: 56dvw;
   transform: rotate(180deg);
 }
 
@@ -88,7 +88,7 @@
   display: flex;
   align-items: center;
 
-  width: 80vw;
+  width: 80dvw;
   height: 100%;
   margin: 0 auto;
 
@@ -120,17 +120,17 @@
   }
 
   .button__left {
-    left: 6vw;
+    left: 6dvw;
   }
 
   .button__right {
-    left: 54vw;
+    left: 54dvw;
   }
 }
 
 @media (width < 768px) {
   .slider {
-    width: 100vw;
+    width: 100dvw;
     height: 100%;
   }
 
@@ -140,16 +140,16 @@
 
   .button__left,
   .button__right {
-    top: calc(75vw - 15px);
+    top: calc(75dvw - 15px);
     width: 30px;
     height: 30px;
   }
 
   .button__left {
-    left: 5vw;
+    left: 5dvw;
   }
 
   .button__right {
-    left: 87vw;
+    left: 87dvw;
   }
 }

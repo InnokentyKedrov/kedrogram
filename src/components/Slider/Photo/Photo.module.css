@@ -1,12 +1,12 @@
 .slider__item {
   display: flex;
   width: 100%;
-  margin: 3vh 0;
+  margin: 3dvh 0;
   transition: transform 0.4s ease-in-out;
 }
 
 .slider__image {
-  width: 50vw;
+  width: 50dvw;
   min-height: 100%;
 
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
   display: flex;
   align-items: safe center;
 
-  width: 30vw;
+  width: 30dvw;
   height: 100%;
   margin: 0;
   padding: 0 32px;
@@ -34,11 +34,11 @@
   }
 
   .slider__image {
-    width: 55vw;
+    width: 55dvw;
   }
 
   .slider__text {
-    width: 35vw;
+    width: 35dvw;
     font-size: 2.3dvh;
   }
 }
@@ -50,8 +50,8 @@
   }
 
   .slider__image {
-    width: 100vw;
-    min-height: 150vw;
+    width: 100dvw;
+    min-height: 150dvw;
   }
 
   .slider__text {

@@ -59,15 +59,15 @@
 @media (width <= 600px) {
   .header__title_image {
     top: -5vh;
-    width: 10vw;
-    height: 16vh;
+    width: 10dvw;
+    height: 16dvh;
   }
 }
 
 @media (width <= 450px) {
   .header__title_image {
     top: -7vh;
-    width: 15vw;
-    height: 20vh;
+    width: 15dvw;
+    height: 20dvh;
   }
 }

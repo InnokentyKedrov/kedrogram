@@ -1,18 +1,18 @@
 .sidebar {
   grid-area: sidebar;
-  padding: 4vh 2vw;
+  padding: 4dvh 2dvw;
   border-right: 1px solid rgb(var(--border-color));
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 2dvh;
 
   margin: 0;
   padding: 0;
 
-  font-size: 1vw;
+  font-size: 1dvw;
   list-style-type: none;
 }
 
@@ -23,12 +23,12 @@
   align-items: center;
 
   width: 100%;
-  height: 3vh;
-  padding-left: 3vw;
+  height: 3dvh;
+  padding-left: 3dvw;
 
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 3vh;
+  background-size: 3dvh;
 
   transition: all 0.4s ease-in-out;
 }
@@ -57,12 +57,12 @@
 
 @media (width < 1160px) {
   .sidebar {
-    padding: 4vh 0;
+    padding: 4dvh 0;
   }
 
   .item {
-    width: 3vh;
-    height: 3vh;
+    width: 3dvh;
+    height: 3dvh;
     margin: 0 auto;
     padding: 0;
   }

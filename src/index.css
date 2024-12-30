@@ -60,7 +60,7 @@ body {
 
 @media (width < 768px) {
   :root {
-    --main-width: 100vw;
+    --main-width: 100dvw;
   }
 
   ::-webkit-scrollbar {

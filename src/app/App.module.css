@@ -4,10 +4,10 @@
   display: grid;
   grid-template:
     'sidebar header' min-content
-    'sidebar main' 1fr / 20vw 80vw;
+    'sidebar main' 1fr / 20dvw 80dvw;
 
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 @media (width < 1280px) {
@@ -22,7 +22,7 @@
   .app {
     grid-template:
       'sidebar header' min-content
-      'sidebar main' 1fr / calc(4vw + 3vh) 1fr;
+      'sidebar main' 1fr / calc(4dvw + 3dvh) 1fr;
   }
 }
 
