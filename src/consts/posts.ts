@@ -12,6 +12,29 @@ export type PostsType = {
 
 export const posts = [
   {
+    title: 'Нижний Новгород, Новый год',
+    data: '31 декабря 2024 года',
+    category: ['all', 'nizh'],
+    photos: [
+      { src: '/nizh/ng2025/0.jpg', alt: '' },
+      { src: '/nizh/ng2025/1.jpg', alt: '' },
+      { src: '/nizh/ng2025/2.jpg', alt: '' },
+      { src: '/nizh/ng2025/3.jpg', alt: '' },
+      { src: '/nizh/ng2025/4.jpg', alt: '' },
+      { src: '/nizh/ng2025/5.jpg', alt: '' },
+      { src: '/nizh/ng2025/6.jpg', alt: '' },
+      { src: '/nizh/ng2025/7.jpg', alt: '' },
+      { src: '/nizh/ng2025/8.jpg', alt: '' },
+      { src: '/nizh/ng2025/9.jpg', alt: '' },
+      { src: '/nizh/ng2025/10.jpg', alt: '' },
+      { src: '/nizh/ng2025/11.jpg', alt: '' },
+      { src: '/nizh/ng2025/12.jpg', alt: '' },
+      { src: '/nizh/ng2025/13.jpg', alt: '' },
+      { src: '/nizh/ng2025/14.jpg', alt: '' },
+      { src: '/nizh/ng2025/15.jpg', alt: '' },
+    ],
+  },
+  {
     title: 'Богородск',
     data: '29 декабря 2024 года',
     category: ['all', 'nizh'],
@@ -228,7 +251,7 @@ export const posts = [
       { src: '/nizh/ligi42024/8.jpg', alt: '' },
       { src: '/nizh/ligi42024/9.jpg', alt: '' },
       { src: '/nizh/ligi42024/10.jpg', alt: '' },
-      { src: '/nizh/ligi42024/11.jpg', alt: 'Традиционное селфи «<Безумцы»' },
+      { src: '/nizh/ligi42024/11.jpg', alt: 'Традиционное селфи «Безумцы»' },
       { src: '/nizh/ligi42024/12.jpg', alt: '' },
     ],
   },
