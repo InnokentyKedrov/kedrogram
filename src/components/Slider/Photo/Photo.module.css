@@ -30,7 +30,7 @@
 
 @media (width < 1024px) {
   .slider__item {
-    transition: inherit;
+    transition: transform 0.4s ease-out;
   }
 
   .slider__image {
