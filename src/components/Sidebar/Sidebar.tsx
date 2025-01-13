@@ -1,14 +1,15 @@
-import { Dispatch, useState } from 'react';
+import { Dispatch } from 'react';
 import { PostsType, posts } from '../../consts/posts';
 import styles from './Sidebar.module.css';
 
 type PropsType = {
+  activeCategory: string;
+  setActiveCategory: Dispatch<string>;
   setCurrentPosts: Dispatch<PostsType[]>;
+
 };
 
-const Sidebar = ({ setCurrentPosts }: PropsType) => {
-  const [activeCategory, setActiveCategory] = useState<string>('all');
-
+const Sidebar = ({ activeCategory, setActiveCategory, setCurrentPosts }: PropsType) => {
   const categoryClick = (data: string) => {
     const temp = posts.filter((el) => el.category.includes(data));
     setCurrentPosts(temp);
