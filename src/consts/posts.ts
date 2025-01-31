@@ -35,7 +35,7 @@ export const posts = [
       { src: '/moscow/kolomen/16.jpg', alt: '' },
       { src: '/moscow/kolomen/17.jpg', alt: '' },
       { src: '/moscow/kolomen/18.jpg', alt: '' },
-      { src: '/moscow/kolomen/19.mp4', alt: '' },
+      { src: '/moscow/kolomen/19.jpg', alt: '' },
       { src: '/moscow/kolomen/20.jpg', alt: '' },
       { src: '/moscow/kolomen/21.jpg', alt: '' },
       { src: '/moscow/kolomen/22.jpg', alt: '' },
