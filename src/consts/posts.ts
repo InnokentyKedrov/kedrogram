@@ -12,6 +12,28 @@ export type PostsType = {
 
 export const posts = [
   {
+    title: 'Нижний Новгород, Печерский монастырь',
+    data: '1 февраляя 2025 года',
+    category: ['all', 'nizh'],
+    photos: [
+      {
+        src: '/nizh/pecher/0.jpg',
+        alt: 'Вознесенский Печерский мужской монастырь основан монахом Киево-Печерского монастыря Дионисием в 1328 г. Печёры, печоры, печеры - соврем. пещеры.',
+      },
+      { src: '/nizh/pecher/1.jpg', alt: '' },
+      { src: '/nizh/pecher/2.jpg', alt: '' },
+      { src: '/nizh/pecher/3.jpg', alt: '' },
+      { src: '/nizh/pecher/4.jpg', alt: '' },
+      { src: '/nizh/pecher/5.jpg', alt: '' },
+      { src: '/nizh/pecher/6.jpg', alt: '' },
+      { src: '/nizh/pecher/7.jpg', alt: '' },
+      { src: '/nizh/pecher/8.jpg', alt: '' },
+      { src: '/nizh/pecher/9.jpg', alt: '' },
+      { src: '/nizh/pecher/10.jpg', alt: '' },
+      { src: '/nizh/pecher/11.jpg', alt: '' },
+    ],
+  },
+  {
     title: 'Коломенское',
     data: '5 января 2025 года',
     category: ['all', 'moscow'],
