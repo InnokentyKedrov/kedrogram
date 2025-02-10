@@ -1,6 +1,7 @@
 import { Dispatch, useState } from 'react';
 import styles from './Photo.module.css';
 import { PhotosType } from '../../../consts/posts';
+import TextButton from './TextButton/TextButton';
 
 type PropsType = {
   position: number;
@@ -56,7 +57,7 @@ const Photo = ({ position, photo, setPosition, width, leftDisabled, rightDisable
       ) : (
         <video className={styles.slider__image} src={`${photo.src}`} controls></video>
       )}
-      <p className={styles.slider__text}>{photo.alt}</p>
+      <TextButton alt={photo.alt} position={position} />
     </li>
   );
 };
