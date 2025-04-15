@@ -8,8 +8,7 @@
   align-items: center;
   justify-content: center;
 
-  width: 100%;
-  height: calc((var(--main-width) - 2 * 4px - 2 * 20px) / 3);
+  min-height: calc((var(--main-width) - 2 * 4px - 2 * 20px) / 3);
 
   font-size: 24px;
   color: #fff;
@@ -43,7 +42,7 @@
 
 @media (width < 768px) {
   .item {
-    height: calc((var(--main-width) - 2 * 4px) / 3);
+    min-height: calc((var(--main-width) - 2 * 4px) / 3);
     font-size: 14px;
   }
 

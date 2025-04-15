@@ -12,6 +12,7 @@
 
 .list {
   display: grid;
+  grid-auto-flow: dense;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4px;
 

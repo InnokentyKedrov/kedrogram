@@ -4,14 +4,16 @@ import gallery from '../../../assets/icons/gallery.svg';
 import { PhotosType } from '../../../consts/posts';
 
 type PropsType = {
-  title: string;
   data: string;
+  gridColumn: number;
+  gridRow: number;
   photos: PhotosType[];
-  setSlider: Dispatch<boolean>;
   setCurrentPhotos: Dispatch<PhotosType[]>;
+  setSlider: Dispatch<boolean>;
+  title: string;
 };
 
-const Post = ({ title, data, photos, setSlider, setCurrentPhotos }: PropsType) => {
+const Post = ({ data, gridColumn, gridRow, photos, setCurrentPhotos, setSlider, title }: PropsType) => {
   const [hover, setHover] = useState<boolean>(false);
 
   const postClick: React.MouseEventHandler<HTMLLIElement> = () => {
@@ -22,7 +24,7 @@ const Post = ({ title, data, photos, setSlider, setCurrentPhotos }: PropsType) =
   return (
     <li
       className={styles.item}
-      style={{ backgroundImage: `url(${photos[0].src})` }}
+      style={{ backgroundImage: `url(${photos[0].src})`, gridColumn: `span ${gridColumn}`, gridRow: `span ${gridRow}` }}
       onClick={postClick}
       onMouseEnter={() => {
         setHover(true);

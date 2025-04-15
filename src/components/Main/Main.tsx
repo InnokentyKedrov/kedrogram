@@ -5,24 +5,27 @@ import Post from './Post/Post';
 
 type PropsType = {
   currentPosts: PostsType[];
-  setSlider: Dispatch<boolean>;
   setCurrentPhotos: Dispatch<PhotosType[]>;
+  setSlider: Dispatch<boolean>;
 };
 
-const Main = ({ currentPosts, setSlider, setCurrentPhotos }: PropsType) => {
+const Main = ({ currentPosts, setCurrentPhotos, setSlider }: PropsType) => {
+  const length = currentPosts.length;
   return (
     <main className={styles.main}>
       <div className={styles.list__wrapper}>
         <ul className={styles.list}>
-          {currentPosts.map((el) => {
+          {currentPosts.map((el, index) => {
             return (
               <Post
                 key={el.title}
-                title={el.title}
                 data={el.data}
+                gridColumn={(length - index < 6) ? 1 : Math.round(Math.random() + 1)}
+                gridRow={Math.round(Math.random() + 1)}
                 photos={el.photos}
-                setSlider={setSlider}
                 setCurrentPhotos={setCurrentPhotos}
+                setSlider={setSlider}
+                title={el.title}
               />
             );
           })}
