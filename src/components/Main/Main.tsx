@@ -16,12 +16,31 @@ const Main = ({ currentPosts, setCurrentPhotos, setSlider }: PropsType) => {
       <div className={styles.list__wrapper}>
         <ul className={styles.list}>
           {currentPosts.map((el, index) => {
+            const size = () => {
+              switch (el.photos[0].size) {
+                case 'big':
+                  return {width: 2, height: 2};
+                case 'tall':
+                  return {width: 1, height: 2};
+                case 'long':
+                  return {width: 2, height: 1};
+                case 'small':
+                  return {width: 1, height: 1};
+                      
+                default:
+                  return {
+                    width: (length - index < 6) ? 1 : Math.round(Math.random() + 1),
+                    height: Math.round(Math.random() + 1)
+                  };
+              }
+            }
+
             return (
               <Post
                 key={el.title}
                 data={el.data}
-                gridColumn={(length - index < 6) ? 1 : Math.round(Math.random() + 1)}
-                gridRow={Math.round(Math.random() + 1)}
+                gridColumn={size().width}
+                gridRow={size().height}
                 photos={el.photos}
                 setCurrentPhotos={setCurrentPhotos}
                 setSlider={setSlider}

@@ -24,7 +24,7 @@ const Post = ({ data, gridColumn, gridRow, photos, setCurrentPhotos, setSlider, 
   return (
     <li
       className={styles.item}
-      style={{ backgroundImage: `url(${photos[0].src})`, gridColumn: `span ${gridColumn}`, gridRow: `span ${gridRow}` }}
+      style={{ backgroundImage: `url(${photos[0].src})`, gridArea: `span ${gridRow} / span ${gridColumn}` }}
       onClick={postClick}
       onMouseEnter={() => {
         setHover(true);

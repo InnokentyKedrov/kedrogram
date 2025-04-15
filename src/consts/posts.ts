@@ -1,16 +1,207 @@
 export type PhotosType = {
-  src: string;
   alt: string;
+  size?: string;
+  src: string;
 };
 
 export type PostsType = {
-  title: string;
-  data: string;
   category: string[];
+  data: string;
   photos: PhotosType[];
+  title: string;
 };
 
 export const posts = [
+  {
+    title: 'Санаксарский монастырь',
+    data: '8-9 февраля 2025 года',
+    category: ['all'],
+    photos: [
+      {
+        src: '/mordov/sanaksar/0.jpg',
+        alt: 'Рождество-Богородичный Санакса́рский мужской монастырь основан в 1659 году',
+        size: 'tall',
+      },
+      { src: '/mordov/sanaksar/1.jpg', alt: '' },
+      { src: '/mordov/sanaksar/2.jpg', alt: '' },
+      { src: '/mordov/sanaksar/3.jpg', alt: '' },
+      { src: '/mordov/sanaksar/4.jpg', alt: '' },
+      { src: '/mordov/sanaksar/5.jpg', alt: '' },
+      { src: '/mordov/sanaksar/6.jpg', alt: '' },
+      { src: '/mordov/sanaksar/7.jpg', alt: '' },
+      { src: '/mordov/sanaksar/8.jpg', alt: '' },
+      { src: '/mordov/sanaksar/9.jpg', alt: '' },
+      { src: '/mordov/sanaksar/10.jpg', alt: '' },
+      { src: '/mordov/sanaksar/11.jpg', alt: '' },
+      { src: '/mordov/sanaksar/12.jpg', alt: '' },
+      { src: '/mordov/sanaksar/13.jpg', alt: '' },
+      { src: '/mordov/sanaksar/14.jpg', alt: '' },
+      { src: '/mordov/sanaksar/15.jpg', alt: '' },
+      { src: '/mordov/sanaksar/16.jpg', alt: '' },
+      { src: '/mordov/sanaksar/17.jpg', alt: '' },
+      { src: '/mordov/sanaksar/18.jpg', alt: '' },
+      { src: '/mordov/sanaksar/19.jpg', alt: '' },
+      { src: '/mordov/sanaksar/20.jpg', alt: '' },
+      { src: '/mordov/sanaksar/21.jpg', alt: '' },
+      { src: '/mordov/sanaksar/22.jpg', alt: '' },
+      { src: '/mordov/sanaksar/23.jpg', alt: '' },
+    ],
+  },
+  {
+    title: 'Художественный музей',
+    data: '8 февраля 2025 года',
+    category: ['all'],
+    photos: [
+      { src: '/mordov/muzey/0.jpg', alt: '' },
+      {
+        src: '/mordov/muzey/1.jpg',
+        alt: 'Мама, мы с тобой, оказывается, трактористки-мордовки...',
+      },
+      { src: '/mordov/muzey/2.jpg', alt: '' },
+      {
+        src: '/mordov/muzey/3.jpg',
+        alt: 'Некоторые картины теперь можно и потрогать и понюхать.)',
+      },
+      { src: '/mordov/muzey/4.jpg', alt: 'Константин Маковский. Боярин.' },
+      {
+        src: '/mordov/muzey/5.jpg',
+        alt: 'Валерий Якоби. Утро Анны Иоановны. Фрагмент. Видимо, картина - копия, оригинал в Третьяковке. Мы видим утро в покоях императрицы. Она плохо себя чувствует и не встаёт с постели. Рядом с царицей сидит в небрежной позе Эрнст Иоганн Бирон — её фаворит. Ему что-то нашёптывает на ухо глава тайной канцелярии Андрей Иванович Ушаков. С другой стороны от Анны Иоанновны сидит супруга Бирона, которая пытается напоить больную лекарством. На стуле в светло-лиловом примостился сын Бирона Карл, пользовавшийся особой любовью императрицы. Мальчик сильно испорчен — мы видим, как он бьёт кнутом шутов. Почти все шуты — знатные аристократы, разжалованные за разные проступки. Лицом к зрителю лежит граф Алексей Петрович Апраксин. В 1729 году он принял католическую веру, за что и поплатился, став шутом. В согнутой позе князь Михаил Алексеевич Голицын, который также попал на шутовскую службу из-за смены вероисповедания. Ему дали кличку Квасник, он должен был подавать гостям квас. Из-за многочисленных унижений князь чуть было не сошёл с ума, однако спас его брак с придворной шутихой-карлицей Авдотьей Бужениновой. Она сидит на медвежьей шкуре у кровати. Их брак вошёл в историю благодаря Ледяному дому, построенном на Неве между Адмиралтейством и Зимним дворцом.',
+      },
+      {
+        src: '/mordov/muzey/6.jpg',
+        alt: 'Он имел высоту около 6 метров и состоял полностью изо льда. Стоял февраль и температура опускалась ниже 30 градусов мороза, поэтому новобрачные, оставленные на первую брачную ночь, чуть было не замёрзли. По замыслу императрицы, они должны были победить стужу горячими объятиями. Чтобы они не убежали, к дому приставили конвой. Есть версия, что Буженинова подкупила охрану, чтобы получить тулуп, который спас жизнь ей и её мужу. После смерти Анны Иоанновны Голицыну вернули титулы и поместье, куда он переехал со своей супругой. Буженинова родила князю двоих сыновей, но умерла при родах. Он пережил жену на 33 года, дожив до 87 лет. Ещё один знатный шут на картине — князь Никита Фёдорович Волконский. Он сидит верхом на Голицыне и смотрит прямо на зрителя. Волконский был назначен шутом при дворе «по давнишней злобе к жене его Аграфене Петровне», которая была замечена в дворцовых интригах. В его обязанности входило кормить ливретку императрицы Цитриньку и разыгрывать бесконечный шутовской спектакль — будто он по ошибке женился на князе Голицыне. Умирая, Анна Иоанновна назначила преемником Иоанна Антоновича, сына своей племянницы Анны Леопольдовны. Анна Леопольдовна издала указ запрещающий издевательства над людьми и упразднила такое явление, как придворные шуты.',
+      },
+      { src: '/mordov/muzey/7.jpg', alt: 'Грибков. Боярыня у водоёма. Фрагмент.' },
+      { src: '/mordov/muzey/8.jpg', alt: 'И. Сидельников. Мордовскиё вышивальщицы. Приданное.' },
+      { src: '/mordov/muzey/9.jpg', alt: 'Картины из кубиков' },
+      { src: '/mordov/muzey/10.jpg', alt: 'Н. Филатов. Русь православная.' },
+      {
+        src: '/mordov/muzey/11.jpg',
+        alt: 'Владимир Илюхин. Встреча А. В. Суворова и Ф. Ф. Ушакова в Севастополе. Оригинал. Фрагмент.',
+      },
+      { src: '/mordov/muzey/12.jpg', alt: 'В. Беднов. Беление холстов.' },
+      { src: '/mordov/muzey/13.jpg', alt: 'А. Шадрин и В. Шадрин. Мокшанка.' },
+      { src: '/mordov/muzey/14.jpg', alt: 'Н. Рябов. Вечерний звон.' },
+      { src: '/mordov/muzey/15.jpg', alt: 'Ю. Дырин. Млечный путь.' },
+      { src: '/mordov/muzey/16.jpg', alt: '' },
+      { src: '/mordov/muzey/17.jpg', alt: 'А. Молев. Мужик с гармошкой.' },
+      { src: '/mordov/muzey/18.jpg', alt: 'П. Микушев. Пера (Охотник).' },
+      { src: '/mordov/muzey/19.jpg', alt: '' },
+      { src: '/mordov/muzey/20.jpg', alt: 'Р. Мурадян. Мальчик с птицей.' },
+      { src: '/mordov/muzey/21.jpg', alt: 'З. Церетели. Модель памятника «Добро побеждает зло».' },
+      { src: '/mordov/muzey/22.jpg', alt: 'Грехопадение. 2023.' },
+      { src: '/mordov/muzey/23.jpg', alt: '' },
+      { src: '/mordov/muzey/24.jpg', alt: '' },
+      { src: '/mordov/muzey/25.jpg', alt: 'Иван Шишкин. В лесу (Из леса с грибами.)' },
+      { src: '/mordov/muzey/26.jpg', alt: '' },
+    ],
+  },
+  {
+    title: 'Скульптуры Степана Эрьзя',
+    data: '8 февраля 2025 года',
+    category: ['all'],
+    photos: [
+      { src: '/mordov/erzya/0.jpg', alt: 'Автопортрет и автоскульптура', size: 'tall' },
+      { src: '/mordov/erzya/1.jpg', alt: 'Ева. 1919 г.' },
+      { src: '/mordov/erzya/2.jpg', alt: 'Страсть.' },
+      { src: '/mordov/erzya/3.jpg', alt: 'Жертвы революции 1905 года.' },
+      { src: '/mordov/erzya/4.jpg', alt: 'Женская фигура (Утро).' },
+      {
+        src: '/mordov/erzya/5.jpg',
+        alt: 'Обнаженная женская фигура. Дерево кебрачо - в переводе с испанского значит «ломай топор!».',
+      },
+      { src: '/mordov/erzya/6.jpg', alt: 'Женский портрет. Дерево альгарробо.' },
+      { src: '/mordov/erzya/7.jpg', alt: '' },
+      { src: '/mordov/erzya/8.jpg', alt: 'Танец (Балерина).' },
+      { src: '/mordov/erzya/9.jpg', alt: 'Инструмент Степана Эрьзи.' },
+      { src: '/mordov/erzya/10.jpg', alt: 'Христос.' },
+      { src: '/mordov/erzya/11.jpg', alt: 'Иоанн Креститель.' },
+      { src: '/mordov/erzya/12.jpg', alt: 'Моисей.' },
+      { src: '/mordov/erzya/13.jpg', alt: '' },
+      { src: '/mordov/erzya/14.jpg', alt: 'Колобок.' },
+      { src: '/mordov/erzya/15.jpg', alt: 'Ещё один Александр Невский в мою коллекцию.)' },
+      { src: '/mordov/erzya/16.jpg', alt: 'Дьявол.' },
+      {
+        src: '/mordov/erzya/17.jpg',
+        alt: 'Отдельно зал с копиями, которые (о счастье...) можно потрогать.',
+      },
+      { src: '/mordov/erzya/18.jpg', alt: '' },
+      { src: '/mordov/erzya/19.jpg', alt: '' },
+      { src: '/mordov/erzya/20.jpg', alt: 'Казнённый.' },
+      { src: '/mordov/erzya/21.jpg', alt: '' },
+      { src: '/mordov/erzya/22.jpg', alt: 'Четырнадцатилетняя мать.' },
+      { src: '/mordov/erzya/23.jpg', alt: 'Портрет русской женщины.' },
+      {
+        src: '/mordov/erzya/24.jpg',
+        alt: 'Выставка в СССР. 1950-1956 гг. Видно, что не все в воссторге, хотя обнажёнки нет совсем.',
+      },
+    ],
+  },
+  {
+    title: 'Саранск',
+    data: '7-8 февраля 2025 года',
+    category: ['all'],
+    photos: [
+      {
+        src: '/mordov/saransk/0.jpg',
+        alt: 'Тавлинская лошадка. Одно из семи чудес финно-угорского мира в номинации «Культура». По легенде, бог солнца Чи Паза послал в помощь людям сокола и бравого скакуна. Конь прибежал быстрее и стал людям верным соратником в бою и помощником в хозяйстве. В мордовской мифологии конь считается оберегом и соединительным звеном между мирами богов и людей',
+      },
+      { src: '/mordov/saransk/1.jpg', alt: '' },
+      {
+        src: '/mordov/saransk/2.jpg',
+        alt: '«Шумбрачи» — это «Добрый день!» на языке эрзя, а «Шумбра ши» — на мокшанском.',
+      },
+      {
+        src: '/mordov/saransk/3.jpg',
+        alt: 'Кафедральный собор святого праведного воина Феодора Ушакова и памятник адмиралу ',
+      },
+      { src: '/mordov/saransk/4.jpg', alt: 'Памятник героям первой мировой войны' },
+      { src: '/mordov/saransk/5.jpg', alt: 'Мемориал воинской славы' },
+      { src: '/mordov/saransk/6.jpg', alt: 'На Саранке' },
+      { src: '/mordov/saransk/7.jpg', alt: '' },
+      {
+        src: '/mordov/saransk/8.jpg',
+        alt: 'Памятник стратонавтам, вылетевшим 30 января 1934 из подмосковного Кунцево и разбившимся в Мордовии',
+      },
+      { src: '/mordov/saransk/9.jpg', alt: 'Памятник семье' },
+      { src: '/mordov/saransk/10.jpg', alt: 'Памятник патриарху Никону' },
+      { src: '/mordov/saransk/11.jpg', alt: 'Ротонда на смотровой площадке' },
+      { src: '/mordov/saransk/12.jpg', alt: '' },
+      { src: '/mordov/saransk/13.jpg', alt: 'Бывалый у запорожца' },
+      { src: '/mordov/saransk/14.jpg', alt: '' },
+      { src: '/mordov/saransk/15.jpg', alt: '' },
+      { src: '/mordov/saransk/16.jpg', alt: 'Дворник' },
+      { src: '/mordov/saransk/17.jpg', alt: '' },
+      { src: '/mordov/saransk/18.jpg', alt: 'Побег из ада и дом с часами в аркадном углу' },
+      { src: '/mordov/saransk/19.jpg', alt: 'Лиса — символ Мордовии' },
+      { src: '/mordov/saransk/20.jpg', alt: 'Цветы тысячелетия' },
+      { src: '/mordov/saransk/21.jpg', alt: 'Памятник основателям Саранской крепости' },
+      { src: '/mordov/saransk/22.jpg', alt: '' },
+      {
+        src: '/mordov/saransk/23.jpg',
+        alt: 'Церковь Спаса Нерукотворного Образа при Управлении Мордовской митрополии',
+      },
+      { src: '/mordov/saransk/24.jpg', alt: '' },
+      { src: '/mordov/saransk/25.jpg', alt: '' },
+      { src: '/mordov/saransk/26.jpg', alt: 'Навеки с Россией. Площадь дружбы народов' },
+      { src: '/mordov/saransk/27.jpg', alt: '' },
+      { src: '/mordov/saransk/28.jpg', alt: '' },
+      { src: '/mordov/saransk/29.jpg', alt: '' },
+      { src: '/mordov/saransk/30.jpg', alt: 'Часовня Александра Невского' },
+      {
+        src: '/mordov/saransk/31.jpg',
+        alt: 'Иоанно-Богословский кафедральный собор. Старейшее здание Мордовии',
+      },
+      { src: '/mordov/saransk/32.jpg', alt: '' },
+      { src: '/mordov/saransk/33.jpg', alt: 'Арт-объект «Самое важное — внутри»' },
+      { src: '/mordov/saransk/34.jpg', alt: 'Театр оперы и балета имени И. М. Яушева' },
+      { src: '/mordov/saransk/35.jpg', alt: 'МГУ им. Н. П. Огарёва' },
+      { src: '/mordov/saransk/36.jpg', alt: 'Магический шар у музея изобразительных искусств' },
+      { src: '/mordov/saransk/37.jpg', alt: '' },
+      { src: '/mordov/saransk/38.jpg', alt: '' },
+      { src: '/mordov/saransk/39.jpg', alt: '' },
+    ],
+  },
   {
     title: 'Нижний Новгород, Печерский монастырь',
     data: '1 февраля 2025 года',
@@ -19,6 +210,7 @@ export const posts = [
       {
         src: '/nizh/pecher/0.jpg',
         alt: 'Вознесенский Печерский мужской монастырь основан монахом Киево-Печерского монастыря Дионисием в 1328 г. Печёры, печоры, печеры - соврем. пещеры.',
+        size: 'long',
       },
       { src: '/nizh/pecher/1.jpg', alt: '' },
       { src: '/nizh/pecher/2.jpg', alt: '' },
@@ -38,7 +230,7 @@ export const posts = [
     data: '6 января 2025 года',
     category: ['all', 'vlad'],
     photos: [
-      { src: '/vlad/vlad_2025/0.jpg', alt: '' },
+      { src: '/vlad/vlad_2025/0.jpg', alt: '', size: 'big' },
       { src: '/vlad/vlad_2025/1.jpg', alt: '' },
       { src: '/vlad/vlad_2025/2.jpg', alt: '' },
       { src: '/vlad/vlad_2025/3.jpg', alt: '' },
@@ -70,7 +262,7 @@ export const posts = [
     data: '5 января 2025 года',
     category: ['all', 'moscow'],
     photos: [
-      { src: '/moscow/push/0.jpg', alt: '' },
+      { src: '/moscow/push/0.jpg', alt: '', size: 'tall' },
       { src: '/moscow/push/1.jpg', alt: '' },
       { src: '/moscow/push/2.jpg', alt: '' },
       { src: '/moscow/push/3.jpg', alt: '' },
@@ -245,7 +437,7 @@ export const posts = [
     data: '22 декабря 2024 года',
     category: ['all', 'moscow'],
     photos: [
-      { src: '/moscow/2024/0.jpg', alt: '' },
+      { src: '/moscow/2024/0.jpg', alt: '', size: 'tall' },
       { src: '/moscow/2024/1.jpg', alt: '' },
       { src: '/moscow/2024/2.jpg', alt: '' },
       { src: '/moscow/2024/3.jpg', alt: '' },
@@ -573,7 +765,7 @@ export const posts = [
     data: '9-11 февраля 2024 года',
     category: ['all', 'mariel'],
     photos: [
-      { src: '/mariel/eda/0.jpg', alt: '' },
+      { src: '/mariel/eda/0.jpg', alt: '', size: 'tall' },
       { src: '/mariel/eda/1.jpg', alt: '' },
       { src: '/mariel/eda/2.jpg', alt: '' },
       { src: '/mariel/eda/3.jpg', alt: '' },
@@ -939,7 +1131,7 @@ export const posts = [
     data: '25 августа 2023 года',
     category: ['all', 'big'],
     photos: [
-      { src: '/camp/terscol/0.jpg', alt: 'Водопад Терскол' },
+      { src: '/camp/terscol/0.jpg', alt: 'Водопад Терскол', size: 'tall' },
       { src: '/camp/terscol/1.jpg', alt: '' },
       { src: '/camp/terscol/2.jpg', alt: '' },
       { src: '/camp/terscol/3.jpg', alt: '' },
@@ -1077,7 +1269,7 @@ export const posts = [
     data: '2011 год',
     category: ['all', 'big'],
     photos: [
-      { src: '/camp/ergaki/fone.jpg', alt: 'Ергаки' },
+      { src: '/camp/ergaki/fone.jpg', alt: 'Ергаки', size: 'tall' },
       { src: '/camp/ergaki/puteshest_50b.jpg', alt: '' },
       { src: '/camp/ergaki/puteshest_52b.jpg', alt: '' },
       { src: '/camp/ergaki/puteshest_53b.jpg', alt: '' },
