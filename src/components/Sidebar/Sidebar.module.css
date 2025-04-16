@@ -35,7 +35,7 @@
 
 .item_active {
   cursor: initial;
-  color: rgb(255 0 0 / 90%);
+  color: rgb(var(--active-color));
 }
 
 .item:hover {

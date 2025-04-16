@@ -17,7 +17,7 @@ const Main = ({ currentPosts, setCurrentPhotos, setSlider }: PropsType) => {
         <ul className={styles.list}>
           {currentPosts.map((el, index) => {
             const size = () => {
-              switch (el.photos[0].size) {
+              switch (el.size) {
                 case 'big':
                   return {width: 2, height: 2};
                 case 'tall':

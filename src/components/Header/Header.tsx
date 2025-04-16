@@ -16,6 +16,7 @@ const Header = () => {
     <header className={styles.header}>
       <nav className={styles.navigation}>
         <a
+          aria-label='Сайт клуба "Кедр"'
           className={`${styles.navigation__item} ${styles.navigation__item_flag}`}
           href="https://kedr-club.vercel.app"
         ></a>

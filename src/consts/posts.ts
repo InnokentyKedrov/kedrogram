@@ -1,6 +1,5 @@
 export type PhotosType = {
   alt: string;
-  size?: string;
   src: string;
 };
 
@@ -8,6 +7,7 @@ export type PostsType = {
   category: string[];
   data: string;
   photos: PhotosType[];
+  size?: string;
   title: string;
 };
 
@@ -16,11 +16,11 @@ export const posts = [
     title: 'Санаксарский монастырь',
     data: '8-9 февраля 2025 года',
     category: ['all'],
+    size: 'tall',
     photos: [
       {
         src: '/mordov/sanaksar/0.jpg',
         alt: 'Рождество-Богородичный Санакса́рский мужской монастырь основан в 1659 году',
-        size: 'tall',
       },
       { src: '/mordov/sanaksar/1.jpg', alt: '' },
       { src: '/mordov/sanaksar/2.jpg', alt: '' },
@@ -100,8 +100,9 @@ export const posts = [
     title: 'Скульптуры Степана Эрьзя',
     data: '8 февраля 2025 года',
     category: ['all'],
+    size: 'tall',
     photos: [
-      { src: '/mordov/erzya/0.jpg', alt: 'Автопортрет и автоскульптура', size: 'tall' },
+      { src: '/mordov/erzya/0.jpg', alt: 'Автопортрет и автоскульптура' },
       { src: '/mordov/erzya/1.jpg', alt: 'Ева. 1919 г.' },
       { src: '/mordov/erzya/2.jpg', alt: 'Страсть.' },
       { src: '/mordov/erzya/3.jpg', alt: 'Жертвы революции 1905 года.' },
@@ -206,11 +207,11 @@ export const posts = [
     title: 'Нижний Новгород, Печерский монастырь',
     data: '1 февраля 2025 года',
     category: ['all', 'nizh'],
+    size: 'long',
     photos: [
       {
         src: '/nizh/pecher/0.jpg',
         alt: 'Вознесенский Печерский мужской монастырь основан монахом Киево-Печерского монастыря Дионисием в 1328 г. Печёры, печоры, печеры - соврем. пещеры.',
-        size: 'long',
       },
       { src: '/nizh/pecher/1.jpg', alt: '' },
       { src: '/nizh/pecher/2.jpg', alt: '' },
@@ -229,8 +230,9 @@ export const posts = [
     title: 'Владимир',
     data: '6 января 2025 года',
     category: ['all', 'vlad'],
+    size: 'big',
     photos: [
-      { src: '/vlad/vlad_2025/0.jpg', alt: '', size: 'big' },
+      { src: '/vlad/vlad_2025/0.jpg', alt: '' },
       { src: '/vlad/vlad_2025/1.jpg', alt: '' },
       { src: '/vlad/vlad_2025/2.jpg', alt: '' },
       { src: '/vlad/vlad_2025/3.jpg', alt: '' },
@@ -261,8 +263,9 @@ export const posts = [
     title: 'Пушкинский',
     data: '5 января 2025 года',
     category: ['all', 'moscow'],
+    size: 'tall',
     photos: [
-      { src: '/moscow/push/0.jpg', alt: '', size: 'tall' },
+      { src: '/moscow/push/0.jpg', alt: '' },
       { src: '/moscow/push/1.jpg', alt: '' },
       { src: '/moscow/push/2.jpg', alt: '' },
       { src: '/moscow/push/3.jpg', alt: '' },
@@ -436,8 +439,9 @@ export const posts = [
     title: 'Москва',
     data: '22 декабря 2024 года',
     category: ['all', 'moscow'],
+    size: 'tall',
     photos: [
-      { src: '/moscow/2024/0.jpg', alt: '', size: 'tall' },
+      { src: '/moscow/2024/0.jpg', alt: '' },
       { src: '/moscow/2024/1.jpg', alt: '' },
       { src: '/moscow/2024/2.jpg', alt: '' },
       { src: '/moscow/2024/3.jpg', alt: '' },
@@ -764,8 +768,9 @@ export const posts = [
     title: 'Йошкар-Ола\nМестная еда',
     data: '9-11 февраля 2024 года',
     category: ['all', 'mariel'],
+    size: 'tall',
     photos: [
-      { src: '/mariel/eda/0.jpg', alt: '', size: 'tall' },
+      { src: '/mariel/eda/0.jpg', alt: '' },
       { src: '/mariel/eda/1.jpg', alt: '' },
       { src: '/mariel/eda/2.jpg', alt: '' },
       { src: '/mariel/eda/3.jpg', alt: '' },
@@ -1130,8 +1135,9 @@ export const posts = [
     title: 'Водопад Терскол',
     data: '25 августа 2023 года',
     category: ['all', 'big'],
+    size: 'tall',
     photos: [
-      { src: '/camp/terscol/0.jpg', alt: 'Водопад Терскол', size: 'tall' },
+      { src: '/camp/terscol/0.jpg', alt: 'Водопад Терскол' },
       { src: '/camp/terscol/1.jpg', alt: '' },
       { src: '/camp/terscol/2.jpg', alt: '' },
       { src: '/camp/terscol/3.jpg', alt: '' },
@@ -1268,8 +1274,9 @@ export const posts = [
     title: 'Ергаки',
     data: '2011 год',
     category: ['all', 'big'],
+    size: 'tall',
     photos: [
-      { src: '/camp/ergaki/fone.jpg', alt: 'Ергаки', size: 'tall' },
+      { src: '/camp/ergaki/fone.jpg', alt: 'Ергаки' },
       { src: '/camp/ergaki/puteshest_50b.jpg', alt: '' },
       { src: '/camp/ergaki/puteshest_52b.jpg', alt: '' },
       { src: '/camp/ergaki/puteshest_53b.jpg', alt: '' },

@@ -6,12 +6,14 @@
   --color-dark: 36 36 36;
   --border-color-dark: 211 211 211;
   --icons-color-dark: 255 255 255;
+  --active-color-dark: 255 255 0;
 
   /* dark theme tokens */
   --background-color-dark: 36 36 36;
   --color-light: 255 255 255;
   --border-color-light: 100 100 100;
   --icons-color-light: 211 211 211;
+  --active-color-light: 200 0 0;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -36,6 +38,7 @@
   --color: var(--color-dark);
   --border-color: var(--border-color-dark);
   --icons-color: var(--icons-color-light);
+  --active-color: var(--active-color-light);
 }
 
 [data-theme='dark'] {
@@ -43,6 +46,7 @@
   --color: var(--color-light);
   --border-color: var(--border-color-light);
   --icons-color: var(--icons-color-dark);
+  --active-color: var(--active-color-dark);
 }
 
 body {
