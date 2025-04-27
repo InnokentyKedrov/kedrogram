@@ -13,39 +13,38 @@ type PropsType = {
 };
 
 const Photo = ({ position, photo, setPosition, width, leftDisabled, rightDisabled }: PropsType) => {
-  const [touchStart, setTouchStart] = useState<number>(0);
-  const [pos1, setPos1] = useState<number>(0);
-  const [pos2, setPos2] = useState<number>(0);
+  const [startPosition, setStartPosition] = useState<number>(0);
+  const [offsetPosition, setOffsetPosition] = useState<number>(0);
 
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    setTouchStart(e.touches[0].clientX);
-    setPos1(e.touches[0].clientX);
+    setStartPosition(e.touches[0].clientX);
+    setOffsetPosition(e.touches[0].clientX);
   };
 
   const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
     const currentPosition = e.touches[0].clientX;
-    if (
-      (!rightDisabled && pos1 - currentPosition > 0) ||
-      (!leftDisabled && pos1 - currentPosition < 0)
-    ) {
-      setPos2(pos1 - currentPosition);
-      setPos1(currentPosition);
-      if (Math.abs(touchStart - currentPosition) <= width) setPosition(position - pos2);
+    const offset = offsetPosition - currentPosition;
+    const moveBack = offset < 0;
+    const moveForward = offset > 0
+
+    if ((!rightDisabled && moveForward) || (!leftDisabled && moveBack)) {
+      setOffsetPosition(currentPosition);
+      setPosition(position - (offset / width) * 100);
     }
   };
 
   const handleTouchEnd = () => {
-    if (Math.abs(touchStart - pos1) >= width / 2) {
-      if (touchStart - pos1 > 0) setPosition(Math.floor(position / width) * width);
-      else setPosition((Math.floor(position / width) + 1) * width);
+    const prevSlide = Math.floor(position / 100) * 100;
+    const nextSlide = (Math.floor(position / 100) + 1) * 100;
+    if (Math.abs(startPosition - offsetPosition) >= width / 3) {
+      (startPosition - offsetPosition > 0) ? setPosition(prevSlide) : setPosition(nextSlide);
     } else {
-      if (touchStart - pos1 > 0) setPosition((Math.floor(position / width) + 1) * width);
-      else setPosition(Math.floor(position / width) * width);
+      (startPosition - offsetPosition > 0) ? setPosition(nextSlide) : setPosition(prevSlide);
     }
   };
 
   return (
-    <li className={styles.slider__item} style={{ transform: `translateX(${position}px)` }}>
+    <li className={styles.slider__item} style={{ transform: `translateX(${position}%)` }}>
       {photo.src.split('.')[1] === 'jpg' ? (
         <div
           className={styles.slider__image}

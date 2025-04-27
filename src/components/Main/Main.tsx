@@ -14,7 +14,7 @@ const Main = ({ currentPosts, setCurrentPhotos, setSlider }: PropsType) => {
   return (
     <main className={styles.main}>
       <div className={styles.list__wrapper}>
-        <ul className={styles.list}>
+        <ul className={styles.list} style={{gridTemplateRows: `repeat(${length}, 1fr)`}}>
           {currentPosts.map((el, index) => {
             const size = () => {
               switch (el.size) {

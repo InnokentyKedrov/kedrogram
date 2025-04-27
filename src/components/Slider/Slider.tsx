@@ -16,8 +16,8 @@ const Slider = ({ photos, setSlider, width }: PropsType) => {
 
   useEffect(() => {
     setLeftDisabled(Math.round(position) === 0);
-    setRightDisabled(Math.floor(position - (1 - photos.length) * width) === 0);
-  }, [position, photos.length, width]);
+    setRightDisabled(Math.floor(position - (1 - photos.length) * 100) === 0);
+  }, [position, photos.length]);
 
   return (
     <div className={styles.slider__wrapper}>
@@ -45,14 +45,14 @@ const Slider = ({ photos, setSlider, width }: PropsType) => {
           <button
             className={`${styles.button} ${styles.button__left}`}
             type="button"
-            onClick={() => setPosition(position + width)}
+            onClick={() => setPosition(position + 100)}
           ></button>
         )}
         {!rightDisabled && (
           <button
             className={`${styles.button} ${styles.button__right}`}
             type="button"
-            onClick={() => setPosition(position - width)}
+            onClick={() => setPosition(position - 100)}
           ></button>
         )}
       </div>

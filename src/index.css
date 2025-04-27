@@ -1,5 +1,5 @@
 :root {
-  --main-width: 975px;
+  --main-width: 976px;
 
   /* light theme tokens */
   --background-color-light: 255 255 255;
@@ -20,7 +20,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.25;
+  hyphens: auto;
   text-rendering: optimizelegibility;
+  white-space: nowrap;
 
   font-synthesis: none;
 }
@@ -61,7 +63,7 @@ body {
 
 @media (width < 1024px) {
   :root {
-    --main-width: 600px;
+    --main-width: 610px;
   }
 }
 

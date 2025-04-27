@@ -47,12 +47,13 @@
 }
 
 .item__image {
-  width: 20px;
+  min-width: 20px;
   height: 20px;
 }
 
 .item span {
   margin-left: 10px;
+  white-space: pre-wrap;
 }
 
 @media (width < 1160px) {
@@ -61,10 +62,13 @@
   }
 
   .item {
+    justify-content: center;
+
     width: 3dvh;
     height: 3dvh;
     margin: 0 auto;
     padding: 0;
+
   }
 
   .item span {

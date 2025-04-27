@@ -14,7 +14,6 @@
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(1000, 1fr);
   gap: 4px;
 
   margin: 0;
