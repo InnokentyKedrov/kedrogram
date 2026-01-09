@@ -35,7 +35,7 @@
   }
 }
 
-@media (width < 768px) {
+@media (pointer: coarse), (width < 768px) {
   .slider__button_text {
     position: relative;
 

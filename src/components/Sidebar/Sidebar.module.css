@@ -68,7 +68,10 @@
     height: 3dvh;
     margin: 0 auto;
     padding: 0;
+  }
 
+  .item__image {
+    height: 40px;
   }
 
   .item span {
@@ -93,5 +96,9 @@
 
   .item:hover {
     transform: none;
+  }
+
+  .item__image {
+    height: 20px;
   }
 }

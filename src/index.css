@@ -1,5 +1,5 @@
 :root {
-  --main-width: 976px;
+  --main-width: 80dvw;
 
   /* light theme tokens */
   --background-color-light: 255 255 255;
@@ -59,12 +59,6 @@ body {
   color: rgb(var(--color));
 
   background-color: rgb(var(--background-color));
-}
-
-@media (width < 1024px) {
-  :root {
-    --main-width: 610px;
-  }
 }
 
 @media (width < 768px) {

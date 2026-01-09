@@ -10,7 +10,7 @@
   min-height: 100dvh;
 }
 
-@media (width < 1280px) {
+/* @media (width < 1280px) {
   .app {
     grid-template:
       'sidebar header' min-content
@@ -24,7 +24,7 @@
       'sidebar header' min-content
       'sidebar main' 1fr / calc(4dvw + 3dvh) 1fr;
   }
-}
+} */
 
 @media (width < 768px) {
   .app {

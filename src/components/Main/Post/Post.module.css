@@ -40,7 +40,7 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-@media (width < 768px) {
+@media (pointer: coarse), (width < 768px) {
   .item {
     min-height: calc((var(--main-width) - 2 * 4px) / 3);
     font-size: 14px;

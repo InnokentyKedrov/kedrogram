@@ -64,7 +64,7 @@
   }
 }
 
-@media (width <= 450px) {
+@media (pointer: coarse), (width <= 450px) {
   .header__title_image {
     top: -7vh;
     width: 15dvw;

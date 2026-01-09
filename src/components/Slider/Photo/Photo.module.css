@@ -33,7 +33,7 @@
   }
 }
 
-@media (width < 768px) {
+@media (pointer: coarse), (width < 768px) {
   .slider__item {
     flex-direction: column;
     margin: 0;

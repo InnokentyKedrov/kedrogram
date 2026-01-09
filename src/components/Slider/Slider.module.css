@@ -124,7 +124,7 @@
   }
 }
 
-@media (width < 768px) {
+@media (pointer: coarse), (width < 768px) {
   .slider {
     width: 100dvw;
     height: 100%;

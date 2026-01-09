@@ -22,9 +22,9 @@
   list-style-type: none;
 }
 
-@media (width < 768px) {
+@media (pointer: coarse), (width < 768px) {
   .main {
-    height: calc(100dvh - 110px);
+    height: calc(100dvh - 10vw - 10px);
     margin: 0;
     padding: 0;
   }
