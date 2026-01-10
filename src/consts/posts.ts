@@ -85,6 +85,7 @@ export const posts = [
       { src: '/mordov/sanaksar/25.jpg', alt: '' },
       { src: '/mordov/sanaksar/26.jpg', alt: '' },
       { src: '/mordov/sanaksar/27.jpg', alt: '' },
+      { src: '/mordov/sanaksar/28.jpg', alt: '' },
     ],
   },
   {
