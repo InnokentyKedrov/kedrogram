@@ -46,6 +46,7 @@ export const posts = [
       { src: '/novg/25.jpg', alt: '' },
       { src: '/novg/26.jpg', alt: '' },
       { src: '/novg/27.jpg', alt: '' },
+      { src: '/novg/28.jpg', alt: '' },
     ],
   },
   {
@@ -81,11 +82,6 @@ export const posts = [
       { src: '/mordov/sanaksar/21.jpg', alt: '' },
       { src: '/mordov/sanaksar/22.jpg', alt: '' },
       { src: '/mordov/sanaksar/23.jpg', alt: '' },
-      { src: '/mordov/sanaksar/24.jpg', alt: '' },
-      { src: '/mordov/sanaksar/25.jpg', alt: '' },
-      { src: '/mordov/sanaksar/26.jpg', alt: '' },
-      { src: '/mordov/sanaksar/27.jpg', alt: '' },
-      { src: '/mordov/sanaksar/28.jpg', alt: '' },
     ],
   },
   {
