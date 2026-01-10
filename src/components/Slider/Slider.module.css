@@ -58,7 +58,7 @@
 .button__left,
 .button__right {
   position: absolute;
-  top: calc(50% - 20px);
+  top: calc(50dvh - 20px);
   background-image: url('../../assets/icons/arrow_dark.png');
   border-radius: 50%;
 }
@@ -132,7 +132,7 @@
 
   .button__left,
   .button__right {
-    top: calc(75dvw - 15px);
+    top: calc(50dvh - 15px);
     width: 30px;
     height: 30px;
   }

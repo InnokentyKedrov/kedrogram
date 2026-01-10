@@ -11,18 +11,12 @@
 
 .slider__image {
   width: 50dvw;
-  min-height: 100%;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 @media (width < 1024px) {
-  .slider__item {
-    transition: transform 0.4s ease-out;
-  }
-
   .slider__image {
     width: 60dvw;
   }
@@ -37,78 +31,5 @@
   .slider__image {
     width: 100dvw;
     min-height: calc(100dvh - 30px);
-  }
-
-  .slider__button_text {
-    position: relative;
-
-    display: block;
-
-    width: 100%;
-    height: 30px;
-
-    background-color: transparent;
-    border: none;
-  }
-
-  .slider__button_text::before,
-  .slider__button_text::after {
-    content: '';
-
-    position: absolute;
-    bottom: -15px;
-
-    width: 2px;
-    height: 60px;
-
-    background-color: rgb(var(--color));
-
-    transition: transform 0.4s ease-out;
-  }
-
-  .slider__button_text_disable::before {
-    left: 42%;
-    transform: rotate(75deg);
-  }
-
-  .slider__button_text_disable::after {
-    right: 42%;
-    transform: rotate(-75deg);
-  }
-
-  .slider__button_text_active::before {
-    left: 42%;
-    transform: rotate(105deg);
-  }
-
-  .slider__button_text_active::after {
-    right: 42%;
-    transform: rotate(-105deg);
-  }
-
-  .slider__text {
-    position: relative;
-
-    width: 100%;
-    padding: 0 10px;
-
-    /* font-size: 14px; */
-    color: rgb(var(--color));
-
-    background-color: rgb(var(--background-color));
-
-    transition: all 0.4s ease-out;
-  }
-
-  .slider__text_active {
-    bottom: calc(100% + 30px);
-    height: 100%;
-    opacity: 0.8;
-  }
-
-  .slider__text_disable {
-    bottom: 30px;
-    height: 0;
-    opacity: 0;
   }
 }

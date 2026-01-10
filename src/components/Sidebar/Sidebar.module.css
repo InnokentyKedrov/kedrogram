@@ -64,14 +64,14 @@
   .item {
     justify-content: center;
 
-    width: 3dvh;
-    height: 3dvh;
+    width: 4dvw;
+    height: 4dvw;
     margin: 0 auto;
     padding: 0;
   }
 
   .item__image {
-    height: 40px;
+    height: 100%;
   }
 
   .item span {
@@ -96,9 +96,5 @@
 
   .item:hover {
     transform: none;
-  }
-
-  .item__image {
-    height: 20px;
   }
 }

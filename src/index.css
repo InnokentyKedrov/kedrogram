@@ -61,6 +61,12 @@ body {
   background-color: rgb(var(--background-color));
 }
 
+@media (width < 1160px) {
+  :root {
+    --main-width: 94dvw;
+  }
+}
+
 @media (width < 768px) {
   :root {
     --main-width: 100dvw;
