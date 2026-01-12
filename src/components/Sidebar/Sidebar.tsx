@@ -106,7 +106,7 @@ const Sidebar = ({ activeCategory, setActiveCategory, setCurrentPosts }: PropsTy
             viewBox="0 0 56 65"
             fill="none"
             stroke="currentColor"
-            stroke-width="5"
+            strokeWidth="5"
           >
             <path d="M40 62H5.8c-1.3 0-5.9-7.1-5.9-8s1-1.4 1-1.4l50-9.4c1.3 0 2 0.9 2 2.4C53 47 48.3 62 40 62z" />
             <path d="M23 42.2L4.7 47.1c0 0 15.3-13 10.6-43.6" />
