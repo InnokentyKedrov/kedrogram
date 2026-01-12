@@ -15,7 +15,7 @@ export const posts = [
   {
     title: 'Великий Новгород',
     data: '3-6 января 2026 года',
-    category: ['all', 'novg'],
+    category: ['novg'],
     size: 'long',
     photos: [
       { src: '/novg/general/0.jpg', alt: '' },
@@ -79,7 +79,7 @@ export const posts = [
   {
     title: 'Рюриково городище, Великий Новгород',
     data: '6 января 2026 года',
-    category: ['all', 'novg'],
+    category: ['novg'],
     photos: [
       {
         src: '/novg/rurik/0.jpg',
@@ -113,7 +113,7 @@ export const posts = [
   {
     title: 'Церковь Спаса на Нередице, Великий Новгород',
     data: '6 января 2026 года',
-    category: ['all', 'novg'],
+    category: ['novg'],
     size: 'tall',
     photos: [
       {
@@ -229,7 +229,7 @@ export const posts = [
   {
     title: 'Древности исторического музея Великого Новгорода',
     data: '5 января 2026 года',
-    category: ['all', 'novg'],
+    category: ['novg'],
     photos: [
       { src: '/novg/muzeum1/0.jpg', alt: '' },
       {
@@ -299,7 +299,7 @@ export const posts = [
   {
     title: 'Владычная Грановитая палата Великий Новгород, XV в.',
     data: '4 января 2026 года',
-    category: ['all', 'novg'],
+    category: ['novg'],
     photos: [
       {
         src: '/novg/palata/0.jpg',
@@ -421,7 +421,7 @@ export const posts = [
   {
     title: 'Санаксарский монастырь',
     data: '8-9 февраля 2025 года',
-    category: ['all'],
+    category: ['mordov'],
     size: 'tall',
     photos: [
       {
@@ -456,7 +456,7 @@ export const posts = [
   {
     title: 'Художественный музей',
     data: '8 февраля 2025 года',
-    category: ['all'],
+    category: ['mordov'],
     photos: [
       { src: '/mordov/muzey/0.jpg', alt: '' },
       {
@@ -505,7 +505,7 @@ export const posts = [
   {
     title: 'Скульптуры Степана Эрьзя',
     data: '8 февраля 2025 года',
-    category: ['all'],
+    category: ['mordov'],
     size: 'tall',
     photos: [
       { src: '/mordov/erzya/0.jpg', alt: 'Автопортрет и автоскульптура' },
@@ -547,7 +547,7 @@ export const posts = [
   {
     title: 'Саранск',
     data: '7-8 февраля 2025 года',
-    category: ['all'],
+    category: ['mordov'],
     photos: [
       {
         src: '/mordov/saransk/0.jpg',
@@ -612,7 +612,7 @@ export const posts = [
   {
     title: 'Нижний Новгород, Печерский монастырь',
     data: '1 февраля 2025 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     size: 'long',
     photos: [
       {
@@ -635,7 +635,7 @@ export const posts = [
   {
     title: 'Владимир',
     data: '6 января 2025 года',
-    category: ['all', 'vlad'],
+    category: ['vlad'],
     size: 'big',
     photos: [
       { src: '/vlad/vlad_2025/0.jpg', alt: '' },
@@ -668,7 +668,7 @@ export const posts = [
   {
     title: 'Пушкинский',
     data: '5 января 2025 года',
-    category: ['all', 'moscow'],
+    category: ['moscow'],
     size: 'tall',
     photos: [
       { src: '/moscow/push/0.jpg', alt: '' },
@@ -706,7 +706,7 @@ export const posts = [
   {
     title: 'Коломенское',
     data: '5 января 2025 года',
-    category: ['all', 'moscow'],
+    category: ['moscow'],
     photos: [
       { src: '/moscow/kolomen/0.jpg', alt: '' },
       { src: '/moscow/kolomen/1.jpg', alt: '' },
@@ -745,7 +745,7 @@ export const posts = [
   {
     title: 'Нижний Новгород, Новый год',
     data: '31 декабря 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/ng2025/0.jpg', alt: '' },
       { src: '/nizh/ng2025/1.jpg', alt: '' },
@@ -768,7 +768,7 @@ export const posts = [
   {
     title: 'Богородск',
     data: '29 декабря 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/dacha_dec24/0.jpg', alt: '' },
       { src: '/nizh/dacha_dec24/1.jpg', alt: '' },
@@ -790,7 +790,7 @@ export const posts = [
   {
     title: 'Оранки',
     data: '29 декабря 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       {
         src: '/nizh/oranki/0.jpg',
@@ -844,7 +844,7 @@ export const posts = [
   {
     title: 'Москва',
     data: '22 декабря 2024 года',
-    category: ['all', 'moscow'],
+    category: ['moscow'],
     size: 'tall',
     photos: [
       { src: '/moscow/2024/0.jpg', alt: '' },
@@ -875,7 +875,7 @@ export const posts = [
   {
     title: 'Щелоковский хутор',
     data: '4 ноября 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       {
         src: '/nizh/shelchok/0.jpg',
@@ -929,7 +929,7 @@ export const posts = [
   {
     title: 'Болдино',
     data: '13 октября 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/boldino/0.jpg', alt: '' },
       { src: '/nizh/boldino/1.jpg', alt: '' },
@@ -951,7 +951,7 @@ export const posts = [
   {
     title: 'Болдино. Господский дом',
     data: '13 октября 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/boldino_gd/0.jpg', alt: '' },
       { src: '/nizh/boldino_gd/1.jpg', alt: '' },
@@ -970,7 +970,7 @@ export const posts = [
   {
     title: 'Лыжи Морозко 4',
     data: '17 февраля 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/ligi42024/0.jpg', alt: 'Лыжи Морозко 4' },
       { src: '/nizh/ligi42024/1.jpg', alt: '' },
@@ -990,7 +990,7 @@ export const posts = [
   {
     title: 'Йошкар-Ола',
     data: '9-11 февраля 2024 года',
-    category: ['all', 'mariel'],
+    category: ['mariel'],
     photos: [
       { src: '/mariel/yola/0.jpg', alt: '' },
       { src: '/mariel/yola/1.jpg', alt: '' },
@@ -1069,7 +1069,7 @@ export const posts = [
   {
     title: 'Йошкар-Ола\nИсторический музей',
     data: '9-11 февраля 2024 года',
-    category: ['all', 'mariel'],
+    category: ['mariel'],
     photos: [
       { src: '/mariel/histor/0.jpg', alt: '' },
       { src: '/mariel/histor/1.jpg', alt: '' },
@@ -1111,7 +1111,7 @@ export const posts = [
   {
     title: 'Йошкар-Ола Художественный музей',
     data: '9-11 февраля 2024 года',
-    category: ['all', 'mariel'],
+    category: ['mariel'],
     photos: [
       { src: '/mariel/hud/0.jpg', alt: '' },
       { src: '/mariel/hud/1.jpg', alt: '' },
@@ -1173,7 +1173,7 @@ export const posts = [
   {
     title: 'Йошкар-Ола\nМестная еда',
     data: '9-11 февраля 2024 года',
-    category: ['all', 'mariel'],
+    category: ['mariel'],
     size: 'tall',
     photos: [
       { src: '/mariel/eda/0.jpg', alt: '' },
@@ -1188,7 +1188,7 @@ export const posts = [
   {
     title: 'Лыжи Снежинка 3',
     data: '4 февраля 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/ligi32024/0.jpg', alt: 'Лыжи Снежинка 3' },
       { src: '/nizh/ligi32024/1.jpg', alt: '' },
@@ -1216,7 +1216,7 @@ export const posts = [
   {
     title: 'Лыжи Морозко 2',
     data: '21 января 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/ligi22024/0.jpg', alt: 'Лыжи Морозко 2' },
       { src: '/nizh/ligi22024/1.jpg', alt: '' },
@@ -1234,7 +1234,7 @@ export const posts = [
   {
     title: 'Лыжи Морозко 1',
     data: '14 января 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/ligi12024/0.jpg', alt: 'Лыжи Морозко 1' },
       { src: '/nizh/ligi12024/1.jpg', alt: '' },
@@ -1249,7 +1249,7 @@ export const posts = [
   {
     title: 'Благовещенский монастырь',
     data: '8 января 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/blagovest/0.jpg', alt: 'Благовещенский монастырь' },
       { src: '/nizh/blagovest/1.jpg', alt: '' },
@@ -1272,7 +1272,7 @@ export const posts = [
   {
     title: 'С Рождеством!',
     data: '7 января 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/rogdestvo/0.jpg', alt: 'С Рождеством!' },
       { src: '/nizh/rogdestvo/1.jpg', alt: '' },
@@ -1282,7 +1282,7 @@ export const posts = [
   {
     title: 'Юрино Замок Шереметевых',
     data: '6 января 2024 года',
-    category: ['all', 'mariel'],
+    category: ['mariel'],
     photos: [
       {
         src: '/mariel/urino/0.jpg',
@@ -1375,7 +1375,7 @@ export const posts = [
   {
     title: 'Карл Брюллов\n"Гадающая Светлана"',
     data: '5 января 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       {
         src: '/nizh/svetlana/0.jpg',
@@ -1387,7 +1387,7 @@ export const posts = [
   {
     title: 'Нижегородский художественный музей',
     data: '5 января 2024 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/artmuseum/0.jpg', alt: 'Макс у камня основания Нижнего Новгорода' },
       { src: '/nizh/artmuseum/1.jpg', alt: '' },
@@ -1419,7 +1419,7 @@ export const posts = [
   {
     title: 'Новый год 2024',
     data: '30 декабря 2023 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/ny2024/0.jpg', alt: 'Новый год 2024' },
       { src: '/nizh/ny2024/1.jpg', alt: '' },
@@ -1442,7 +1442,7 @@ export const posts = [
   {
     title: 'Макарий',
     data: '2 декабря 2023 года',
-    category: ['all', 'nizh'],
+    category: ['nizh'],
     photos: [
       { src: '/nizh/makaryi/0.jpg', alt: 'Макарий' },
       { src: '/nizh/makaryi/1.jpg', alt: '' },
@@ -1467,7 +1467,7 @@ export const posts = [
   {
     title: 'Муром',
     data: '4 ноября 2023 года',
-    category: ['all'],
+    category: ['vlad'],
     photos: [
       { src: '/vlad/murom/0.jpg', alt: 'Муром' },
       { src: '/vlad/murom/1.jpg', alt: '' },
@@ -1515,7 +1515,7 @@ export const posts = [
   {
     title: 'Грибочки',
     data: '13 сентября, 2023 год',
-    category: ['all', 'big'],
+    category: ['big'],
     photos: [
       { src: '/nizh/mushroom/0.jpg', alt: 'Под берёзой.' },
       { src: '/nizh/mushroom/1.jpg', alt: 'Под осиной.' },
@@ -1540,7 +1540,7 @@ export const posts = [
   {
     title: 'Водопад Терскол',
     data: '25 августа 2023 года',
-    category: ['all', 'big'],
+    category: ['big'],
     size: 'tall',
     photos: [
       { src: '/camp/terscol/0.jpg', alt: 'Водопад Терскол' },
@@ -1589,7 +1589,7 @@ export const posts = [
   {
     title: 'Чегет',
     data: '24 августа 2023 года',
-    category: ['all', 'big'],
+    category: ['big'],
     photos: [
       { src: '/camp/cheget/0.jpg', alt: 'Чегет' },
       { src: '/camp/cheget/1.jpg', alt: '' },
@@ -1633,7 +1633,7 @@ export const posts = [
   {
     title: 'Противолавинный барьер',
     data: '23 августа 2023 года',
-    category: ['all', 'big'],
+    category: ['big'],
     photos: [
       { src: '/camp/zikkur/0.jpg', alt: 'Противолавинный барьер' },
       { src: '/camp/zikkur/1.jpg', alt: '' },
@@ -1650,7 +1650,7 @@ export const posts = [
   {
     title: 'Эльбрус',
     data: '23 августа 2023 года',
-    category: ['all', 'big'],
+    category: ['big'],
     photos: [
       { src: '/camp/elbrus/0.jpg', alt: 'Эльбрус' },
       { src: '/camp/elbrus/1.jpg', alt: '' },
@@ -1679,7 +1679,7 @@ export const posts = [
   {
     title: 'Ергаки',
     data: '2011 год',
-    category: ['all', 'big'],
+    category: ['big'],
     photos: [
       { src: '/camp/ergaki/fone.jpg', alt: 'Ергаки' },
       { src: '/camp/ergaki/puteshest_50b.jpg', alt: '' },

@@ -10,7 +10,7 @@ type PropsType = {
 
 const Sidebar = ({ activeCategory, setActiveCategory, setCurrentPosts }: PropsType) => {
   const categoryClick = (data: string) => {
-    const temp = posts.filter((el) => el.category.includes(data));
+    const temp = data === 'all' ? posts : posts.filter((el) => el.category.includes(data));
     setCurrentPosts(temp);
     setActiveCategory(data);
   };
